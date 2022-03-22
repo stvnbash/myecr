@@ -1,3 +1,25 @@
+## About this project
+- By Steven Bash
+---
+---
+Success! Created myecr at C:\Users\S.Bash\myecr
+Inside that directory, you can run several commands:
+
+  `npm run dev`
+   - Starts the development server.
+
+  `npm run build`
+   - Builds the app for production.
+
+  `npm start`
+   - Runs the built app in production mode.
+
+We suggest that you begin by typing:
+
+  `cd myecr`
+  `npm run dev`
+---
+---
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
