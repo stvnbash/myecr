@@ -2,6 +2,10 @@
 - By Steven Bash
 ---
 ---
+## Tailwind Ui
+`npm install @headlessui/react @heroicons/react`
+---
+---
 Success! Created myecr at C:\Users\S.Bash\myecr
 Inside that directory, you can run several commands:
 
