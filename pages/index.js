@@ -6,9 +6,13 @@ export default function Home() {
       {/* <h1 className="text-3xl font-bold underline">
         Hello world!
       </h1> */}
-      <div class="flex flex-wrap">
+      {/* <div class="flex flex-wrap w-full "> */}
+      {/* <div class="grid gap-4 grid-flow-col auto-cols-max w-full"> */}
+      {/* <div class="flex flex-wrap gap-4 overflow-hidden"> */}
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-0.5 sm:gap-4 overflow-hidden">
         <Card title="Aeries" imgURL="https://play-lh.googleusercontent.com/6J47oNiSNizXA610JPz9SCcG8ej9wBJXELZlJOF0uhA5CzdTY0rP_bbPf4rwEAP7Ido=s0-rw"/>
         <Card title="* Staff/Student Live Chat with Tech Office (8am-3pm)" imgURL="https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s0-rw"/>
+        <Card title="Canvas" imgURL="https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s0-rw"/>
         <Card title="Canvas" imgURL="https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s0-rw"/>
         <Card title="Canvas" imgURL="https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s0-rw"/>
         <Card title="Canvas" imgURL="https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s0-rw"/>

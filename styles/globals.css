@@ -23,6 +23,10 @@ a {
   @apply bg-blue-800 p-4 flex items-center justify-between w-full text-yellow-500 font-bold sticky top-0;
 }
 
-.container {
-  @apply mx-auto max-w-screen-2xl p-8 md:p-16 pt-24;
+/* .container {
+  @apply w-full mx-auto max-w-screen-2xl p-8 md:p-16 pt-24;
+} */
+
+.container1 {
+  @apply  pt-24;
 }

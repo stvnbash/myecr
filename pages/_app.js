@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Header />
       {/* <Navbar /> */}
-      <main className="container">
+      <main className="container1 mx-auto container">
         <Component {...pageProps} />
       </main>
     </>
