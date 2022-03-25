@@ -1,11 +1,12 @@
 import Category from '../components/Category.js';
+import CategorySelector from '../components/CategorySelector.js';
 import RoleSelector from '../components/RoleSelector.js';
 
 export default function Home({ roles, categories, cards }) {
   return (
     <>
-      <RoleSelector roles={roles}/>
-      <Category title="Featured" cards={cards} />
+      {/* <RoleSelector roles={roles}/> */}
+      <CategorySelector categories={categories} cards={cards}/>
       {/* <h1 className="text-3xl font-bold underline">
         Hello world!
       </h1> */}
@@ -24,51 +25,214 @@ export async function getStaticProps() {
     props: {
       roles: [
         {
-          key: "STU",
-          title: "Student",
-          order: 1
+          id: 1,
+          oid: "STU",
+          title: "Student"
         },
         {
-          key: "TCH",
-          title: "Teacher",
-          order: 2
+          id: 2,
+          oid: "TCH",
+          title: "Teacher"
         },
         {
-          key: "PAR",
-          title: "Parent / Guardian",
-          order: 3
+          id: 3,
+          oid: "PAR",
+          title: "Parent / Guardian"
         },
         {
-          key: "STF",
-          title: "Classified Staff",
-          order: 4
+          id: 4,
+          oid: "STF",
+          title: "Classified Staff"
         },
         {
-          key: "SUB",
-          title: "Substitute Teacher",
-          order: 5
-        },
-        {
-          key: "ALL",
-          title: "View all Applications",
-          order: 6
-        },
+          id: 5,
+          oid: "SUB",
+          title: "Substitute Teacher"
+        }
 
       ],
 
-      categories: {
-        "1": "Featured",
-        "2": "Productivity",
-        "3": "ECR Apps",
-        "4": "Instruction"
-      },
+      categories: [
+        {
+          id: 1,
+          oid: "FEA",
+          title: "Featured",
+        },
+        {
+          id: 2,
+          oid: "PRO",
+          title: "Productivity",
+        },
+        {
+          id: 3,
+          oid: "ECR",
+          title: "ECR Apps",
+        },
+        {
+          id: 4,
+          oid: "INS",
+          title: "Instruction",
+        }
+      ],
+
       cards: [
         {
-          "Title": "Canvas",
-          "icon": "https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s0-rw",
-          "categories": ["1", "4"],
-          "priority": "yes",
-          "roles": {
+          title: "Canvas",
+          url: "#",
+          icon: "https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s0-rw",
+          category: ["FEA", "INS"],
+          priority: true,
+          roles: {
+            "STU": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "TCH": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "STF": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "SUB": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            }
+          }
+        },
+        {
+          title: "Aeries",
+          url: "#",
+          icon: "https://play-lh.googleusercontent.com/6J47oNiSNizXA610JPz9SCcG8ej9wBJXELZlJOF0uhA5CzdTY0rP_bbPf4rwEAP7Ido=s0-rw",
+          category: ["FEA", "INS"],
+          priority: true,
+          roles: {
+            "STU": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "TCH": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "STF": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "SUB": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            }
+          }
+        },
+        {
+          title: "ECR Email",
+          url: "#",
+          icon: "https://play-lh.googleusercontent.com/KSuaRLiI_FlDP8cM4MzJ23ml3og5Hxb9AapaGTMZ2GgR103mvJ3AAnoOFz1yheeQBBI=s0-rw",
+          category: ["FEA", "PRO"],
+          priority: true,
+          roles: {
+            "STU": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "TCH": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "STF": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "SUB": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            }
+          }
+        },
+        {
+          title: "OneDrive",
+          url: "#",
+          icon: "https://play-lh.googleusercontent.com/6AWr-qrhGT0ohjw0koq3bM8GHEFg1gTurald4FjCDg2RulTp4y_VVsYWUtw7Fo6lsQo=s0-rw",
+          category: ["PRO"],
+          priority: true,
+          roles: {
+            "STU": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "TCH": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "STF": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "SUB": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            }
+          }
+        },
+        {
+          title: "Microsoft Office Portal",
+          url: "#",
+          icon: "https://play-lh.googleusercontent.com/D6XDCje7pB0nNP1sOZkwD-tXkV0_As3ni21us5yZ71_sy0FTWv1s_MQBe1JUnHlgE94=s0-rw",
+          category: ["PRO"],
+          priority: true,
+          roles: {
+            "STU": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "TCH": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "STF": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "SUB": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            }
+          }
+        },
+        {
+          title: "Paycom",
+          url: "#",
+          icon: "https://play-lh.googleusercontent.com/JGhdoNAdO_gYOyPImRbn7CxdeY4a71ZtnhNvTZGsRyYTObPzCXXIOKpSOaQFraU6XUt-=s0-rw",
+          category: ["FEA", "ECR"],
+          priority: true,
+          roles: {
+            "STU": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "TCH": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "STF": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            },
+            "SUB": {
+              "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "URL": "https://ecrchs.instructure.com/login/saml"
+            }
+          }
+        },
+        {
+          title: "Adobe",
+          url: "#",
+          icon: "https://play-lh.googleusercontent.com/WIVfY42FSk4naFCn42h694luehyzsifuiy2l0ok_-lFeb50qda_7j3YQdp0x2-S2_ykH=s0-rw",
+          category: ["PRO"],
+          priority: true,
+          roles: {
             "STU": {
               "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
               "URL": "https://ecrchs.instructure.com/login/saml"
@@ -90,7 +254,7 @@ export async function getStaticProps() {
         {
           "Title": "Aeries",
           "icon": "https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s0-rw",
-          "categories": ["1", "4"],
+          "category": ["1", "4"],
           "priority": "yes",
           "roles": {
             "STU": {

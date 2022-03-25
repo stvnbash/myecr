@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Header({title, imgURL}) {
+export default function Header({title, url, icon}) {
 
     return (
         <>
@@ -14,12 +14,12 @@ export default function Header({title, imgURL}) {
                 </div>
             </div>
         </div> */}
-        <Link href="#">
-            <a class="sm:w-40 mx-auto mb-5 sm:mb-8 font-medium hover:underline hover:underline-offset-2 duration-500">
+        <Link href={url}>
+            <a class="sm:w-40 mx-auto mb-5 sm:mb-8 font-medium hover:underline hover:underline-offset-2 duration-500" aria-label={`Click this tile to access ${title}`}>
                 {/* <div class="rounded-3xl border hover:border-4 hover:border-transparent shadow-md hover:shadow-xl duration-200 max-w-xs h-full sm:mx-5 mx-2 p-1 2xl:w-36"> */}
                 {/* <div class="rounded-3xl border hover:border-4 hover:border-transparent shadow-md hover:shadow-xl duration-200 max-w-xs h-full sm:mx-5 mx-2 p-1"> */}
                 <div class="rounded-3xl border hover:border-4 hover:border-transparent shadow-md hover:shadow-xl duration-200 max-w-xs h-full p-1">
-                    <img class="rounded-3xl pb-2" src={imgURL} alt=""/>
+                    <img class="rounded-3xl pb-2" src={icon} alt={`Icon for ${title}`}/>
                     <p class="text-center text">{title}</p>
                 </div>
             </a>
