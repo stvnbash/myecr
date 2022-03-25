@@ -28,5 +28,5 @@ a {
 } */
 
 .container1 {
-  @apply  pt-24;
+  @apply  pt-24 md:px-10;
 }

@@ -1,0 +1,88 @@
+{
+    "roles": {
+        "STU": "Student",
+        "PAR": "Parent",
+        "TCH": "Teacher",
+        "STF": "Staff", 
+        "SUB": "Substitute"
+    },
+
+    "categories": {
+        "1": "Featured",
+        "2": "Productivity",
+        "3": "ECR Apps",
+        "4": "Instruction"
+    },
+
+    "links": [
+        {
+            "Title": "Canvas",
+            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "URL": "https://ecrchs.instructure.com/login/saml",
+            "roles": ["STU", "TCH", "STF", "SUB"],
+            "categories": ["1", "4"],
+            "priority": "yes",
+            "icon": "https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s0-rw"
+        }, 
+        {
+            "Title": "Canvas",
+            "icon": "https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s0-rw",
+            "categories": ["1", "4"], 
+            "priority": "yes",
+            "roles": {
+                "STU": {
+                    "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+                    "URL": "https://ecrchs.instructure.com/login/saml"
+                },
+                "TCH": {
+                    "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+                    "URL": "https://ecrchs.instructure.com/login/saml"
+                },
+                "STF": {
+                    "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+                    "URL": "https://ecrchs.instructure.com/login/saml"
+                },
+                "SUB": {
+                    "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+                    "URL": "https://ecrchs.instructure.com/login/saml"
+                }
+            }
+        },
+        {
+            "Title": "Canvas",
+            "Description": "Canvas for Parents",
+            "URL": "https://ecrchs.instructure.com/login/canvas",
+            "roles": ["PAR"],
+            "categories": ["1", "4"], 
+            "priority": "yes",
+            "icon": "https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s0-rw"
+        }, 
+        {
+            "Title": "Aeries",
+            "Description": "Aeries for students and parents - View grades, attendance, student records and more!",
+            "URL": "https://elcaminoreal.asp.aeries.net/student/LoginParent.aspx",
+            "roles": ["STU", "PAR"],
+            "categories": ["1", "4"],
+            "priority": "yes",
+            "icon": "https://play-lh.googleusercontent.com/6J47oNiSNizXA610JPz9SCcG8ej9wBJXELZlJOF0uhA5CzdTY0rP_bbPf4rwEAP7Ido=s0-rw"
+        },
+        {
+            "Title": "Aeries",
+            "Description": "Aeries for Teachers",
+            "URL": "https://elcaminoreal.asp.aeries.net/student/LoginParent.aspx",
+            "roles": ["STU", "PAR"],
+            "categories": ["1", "4"],
+            "priority": "yes",
+            "icon": "https://play-lh.googleusercontent.com/6J47oNiSNizXA610JPz9SCcG8ej9wBJXELZlJOF0uhA5CzdTY0rP_bbPf4rwEAP7Ido=s0-rw"
+        },
+        {
+            "Title": "Aeries",
+            "Description": "Aeries for Staff and Admin",
+            "URL": "https://elcaminoreal.asp.aeries.net/admin/Login.aspx",
+            "roles": ["STF"],
+            "categories": ["1", "4"],
+            "priority": "yes",
+            "icon": "https://play-lh.googleusercontent.com/6J47oNiSNizXA610JPz9SCcG8ej9wBJXELZlJOF0uhA5CzdTY0rP_bbPf4rwEAP7Ido=s0-rw"
+        }
+    ]
+}
