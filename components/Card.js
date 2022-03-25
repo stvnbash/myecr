@@ -14,8 +14,8 @@ export default function Header({title, url, icon}) {
                 </div>
             </div>
         </div> */}
-        <Link href={url}>
-            <a class="sm:w-40 mx-auto mb-5 sm:mb-8 font-medium hover:underline hover:underline-offset-2 duration-500" aria-label={`Click this tile to access ${title}`}>
+        <Link href={url} passHref>
+            <a target="_blank" class="sm:w-40 mx-auto mb-5 sm:mb-8 font-medium hover:underline hover:underline-offset-2 duration-500" aria-label={`Click this tile to access ${title}`}>
                 {/* <div class="rounded-3xl border hover:border-4 hover:border-transparent shadow-md hover:shadow-xl duration-200 max-w-xs h-full sm:mx-5 mx-2 p-1 2xl:w-36"> */}
                 {/* <div class="rounded-3xl border hover:border-4 hover:border-transparent shadow-md hover:shadow-xl duration-200 max-w-xs h-full sm:mx-5 mx-2 p-1"> */}
                 <div class="rounded-3xl border hover:border-4 hover:border-transparent shadow-md hover:shadow-xl duration-200 max-w-xs h-full p-1">
