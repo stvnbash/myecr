@@ -15,12 +15,12 @@ export default function Header({title, url, icon}) {
             </div>
         </div> */}
         <Link href={url} passHref>
-            <a target="_blank" class="sm:w-40 mx-auto mb-5 sm:mb-8 font-medium hover:underline hover:underline-offset-2 duration-500" aria-label={`Click this tile to access ${title}`}>
-                {/* <div class="rounded-3xl border hover:border-4 hover:border-transparent shadow-md hover:shadow-xl duration-200 max-w-xs h-full sm:mx-5 mx-2 p-1 2xl:w-36"> */}
+            <a target="_blank" className="sm:w-40 mx-auto mb-5 sm:mb-8 font-medium hover:underline hover:underline-offset-2 duration-500" aria-label={`Click this tile to access ${title}`}>
+                {/* <div className="rounded-3xl border hover:border-4 hover:border-transparent shadow-md hover:shadow-xl duration-200 max-w-xs h-full sm:mx-5 mx-2 p-1 2xl:w-36"> */}
                 {/* <div class="rounded-3xl border hover:border-4 hover:border-transparent shadow-md hover:shadow-xl duration-200 max-w-xs h-full sm:mx-5 mx-2 p-1"> */}
-                <div class="rounded-3xl border hover:border-4 hover:border-transparent shadow-md hover:shadow-xl duration-200 max-w-xs h-full p-1">
-                    <img class="rounded-3xl pb-2" src={icon} alt={`Icon for ${title}`}/>
-                    <p class="text-center text">{title}</p>
+                <div className="rounded-3xl border hover:border-4 hover:border-transparent shadow-md hover:shadow-xl duration-200 max-w-xs h-full p-1">
+                    <img className="rounded-3xl mb-2 aspect-square" src={icon} alt={`Icon for ${title}`}/>
+                    <p className="text-center text">{title}</p>
                 </div>
             </a>
         </Link>
