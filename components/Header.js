@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Header({ setShowRoleSelector, role }) {
+export default function Header({ setShowRoleSelector, role, setRole }) {
     return (
         <header>
             <div className='header'>
@@ -11,7 +11,7 @@ export default function Header({ setShowRoleSelector, role }) {
                     <Link href='http://mail.ecrchs.net'><a className="px-2">ECR Mail</a></Link>
                     <Link href='http://ecrchs.net'><a className="px-2">ecrchs.net</a></Link> */}
                     <p>{role ? role[1] : ''}</p>
-                    <button className="px-2" onClick={() => {localStorage.removeItem('role'); setShowRoleSelector(true);}}>CHANGE ROLE</button>
+                    <button className="px-2" onClick={() => {localStorage.removeItem('role'); setRole([null, null]); setShowRoleSelector(true);}}>CHANGE ROLE</button>
                 </div>
             </div>
         </header>

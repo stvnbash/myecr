@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
   
   return (
     <>
-      <Header setShowRoleSelector={setShowRoleSelector} role={role}/>
+      <Header setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole}/>
       {/* <Navbar /> */}
       <main className="container1 mx-auto container">
         <Component {...pageProps} showRoleSelector={showRoleSelector} setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole}/>
