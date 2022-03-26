@@ -10,10 +10,10 @@ function MyApp({ Component, pageProps }) {
   const [role, setRole] = useState([null, null])
   
   useEffect(() => {
-    console.log(localStorage)
+    // console.log(localStorage)
     localStorage.getItem('role') ? setRole([localStorage.getItem('role'), localStorage.getItem('role-title')]) : setRole([null, null])
     localStorage.getItem('role') ? setShowRoleSelector(false) : setShowRoleSelector(true)
-    console.log(role)
+    // console.log(role)
     }, [])
   
   return (
