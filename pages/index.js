@@ -5,24 +5,24 @@ import { useState, useEffect } from 'react';
 
 export default function Home({ roles, categories, cards, showRoleSelector, setShowRoleSelector}) {
 
-  const [role, setRole] = useState(null)
+  // const [role, setRole] = useState(null)
 
-  // https://developer.school/snippets/react/localstorage-is-not-defined-nextjs#why-does-this-happen
-  useEffect(() => {
-    localStorage.getItem('role') ? setRole(localStorage.getItem('role')) : setRole(null)
-    console.log(localStorage)
-    // localStorage.setItem('role', "STU")
-    // console.log(localStorage)
+  // // https://developer.school/snippets/react/localstorage-is-not-defined-nextjs#why-does-this-happen
+  // useEffect(() => {
+  //   localStorage.getItem('role') ? setRole(localStorage.getItem('role')) : setRole(null)
+  //   console.log(localStorage)
+  //   // localStorage.setItem('role', "STU")
+  //   // console.log(localStorage)
 
 
-    // if (typeof window !== 'undefined') {
-    //   console.log('You are on the browser')
-    //   // 👉️ can use localStorage here
-    // } else {
-    //   console.log('You are on the server')
-    //   // 👉️ can't use localStorage
-    // }
-  }, [])
+  //   // if (typeof window !== 'undefined') {
+  //   //   console.log('You are on the browser')
+  //   //   // 👉️ can use localStorage here
+  //   // } else {
+  //   //   console.log('You are on the server')
+  //   //   // 👉️ can't use localStorage
+  //   // }
+  // }, [])
 
   return (
     <>
