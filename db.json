@@ -60,20 +60,24 @@
         "priority": true,
         "roles": {
           "STU": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "TCH": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Teachers",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "STF": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "SUB": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Substitutes",
+            "url": "https://ecrchs.instructure.com/login/saml"
+          },
+          "PAR": {
+            "description": "Canvas for Parents",
+            "url": "https://ecrchs.instructure.com/login/canvas"
           }
         }
       },
@@ -85,20 +89,24 @@
         "priority": true,
         "roles": {
           "STU": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "TCH": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "STF": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "SUB": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
+          },
+          "PAR": {
+            "description": "Canvas for Parents",
+            "url": "https://ecrchs.instructure.com/login/canvas"
           }
         }
       },
@@ -110,20 +118,16 @@
         "priority": true,
         "roles": {
           "STU": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "TCH": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "STF": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
-          },
-          "SUB": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           }
         }
       },
@@ -135,20 +139,20 @@
         "priority": true,
         "roles": {
           "STU": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "TCH": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "STF": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "SUB": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           }
         }
       },
@@ -160,20 +164,20 @@
         "priority": true,
         "roles": {
           "STU": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "TCH": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "STF": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "SUB": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           }
         }
       },
@@ -184,21 +188,13 @@
         "category": ["FEA", "ECR"],
         "priority": true,
         "roles": {
-          "STU": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
-          },
           "TCH": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "STF": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
-          },
-          "SUB": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           }
         }
       },
@@ -210,20 +206,20 @@
         "priority": true,
         "roles": {
           "STU": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "TCH": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "STF": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           },
           "SUB": {
-            "Description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "URL": "https://ecrchs.instructure.com/login/saml"
+            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+            "url": "https://ecrchs.instructure.com/login/saml"
           }
         }
       },
@@ -234,7 +230,19 @@
         "category": ["PRO"],
         "priority": "yes",
         "roles": {
-        }
+            "STU": {
+              "description": "Canvas for Students - view daily agendas, complete assignments, and take assessments",
+              "url": "https://ecrchs.instructure.com/login/saml"
+            },
+            "TCH": {
+              "description": "Canvas for Teachers",
+              "url": "https://ecrchs.instructure.com/login/saml"
+            },
+            "STF": {
+              "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "url": "https://ecrchs.instructure.com/login/saml"
+            }
+          }
       },
       {
         "title": "Google Drive",
@@ -243,7 +251,19 @@
         "category": ["PRO"],
         "priority": "yes",
         "roles": {
-        }
+            "STU": {
+              "description": "Canvas for Students - view daily agendas, complete assignments, and take assessments",
+              "url": "https://ecrchs.instructure.com/login/saml"
+            },
+            "TCH": {
+              "description": "Canvas for Teachers",
+              "url": "https://ecrchs.instructure.com/login/saml"
+            },
+            "STF": {
+              "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "url": "https://ecrchs.instructure.com/login/saml"
+            }
+          }
       },
       {
         "title": "Password Reset",
@@ -252,7 +272,19 @@
         "category": ["ECR"],
         "priority": "yes",
         "roles": {
-        }
+            "STU": {
+              "description": "Canvas for Students - view daily agendas, complete assignments, and take assessments",
+              "url": "https://ecrchs.instructure.com/login/saml"
+            },
+            "TCH": {
+              "description": "Canvas for Teachers",
+              "url": "https://ecrchs.instructure.com/login/saml"
+            },
+            "STF": {
+              "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
+              "url": "https://ecrchs.instructure.com/login/saml"
+            }
+          }
       },
       {
         "title": "Aeries",

@@ -2,13 +2,22 @@ import Link from 'next/link';
 import Card from '../components/Card';
 
 
-export default function Header({ title, oid, cards }) {
+export default function Header({ title, oid, cards, role }) {
 
     const items = []
+    //  && (Object.keys(card.roles).includes(role[0]))
     cards.sort((a, b) => (a.title > b.title) ? 1 : -1)
     for (let card of cards) {
-        if (card.category.includes(oid)) {
-            items.push(<Card title={card.title ? card.title : "None"} url={card.url ? card.url : "#"} icon={card.icon ? card.icon : "https://instructure-uploads.s3.amazonaws.com/account_116420000000000001/attachments/944179/Bash_ECRslant.png"} name={oid} key={card.title}/>)
+        if (card.category.includes(oid) && (Object.keys(card.roles).includes(role[0]))) {
+            // console.log(card.roles[ role[0] ].url)
+            items.push(<Card
+                title={card.title ? card.title : "None"}
+                description={card.roles[ role[0] ].description ? card.roles[ role[0] ].description : "#"}
+                url={card.roles[ role[0] ].url ? card.roles[ role[0] ].url : "#"}
+                icon={card.icon ? card.icon : "https://instructure-uploads.s3.amazonaws.com/account_116420000000000001/attachments/944179/Bash_ECRslant.png"}
+                name={oid}
+                key={card.title}
+            />)
         }
     }
 

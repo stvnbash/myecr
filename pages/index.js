@@ -3,7 +3,7 @@ import CategorySelector from '../components/CategorySelector.js';
 import RoleSelector from '../components/RoleSelector.js';
 import { useState, useEffect } from 'react';
 
-export default function Home({ roles, categories, cards, showRoleSelector, setShowRoleSelector}) {
+export default function Home({ roles, categories, cards, showRoleSelector, setShowRoleSelector, role, setRole}) {
 
   // const [role, setRole] = useState(null)
 
@@ -27,8 +27,8 @@ export default function Home({ roles, categories, cards, showRoleSelector, setSh
   return (
     <>
       {/* {role === null ? <RoleSelector roles={roles} /> : <></>} */}
-      <RoleSelector roles={roles} showRoleSelector={showRoleSelector} setShowRoleSelector={setShowRoleSelector}/>
-      <CategorySelector categories={categories} cards={cards} />
+      <RoleSelector roles={roles} showRoleSelector={showRoleSelector} setShowRoleSelector={setShowRoleSelector} setRole={setRole}/>
+      <CategorySelector categories={categories} cards={cards} role={role}/>
       {/* <h1 className="text-3xl font-bold underline">
         Hello world!
       </h1> */}

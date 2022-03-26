@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Category from './Category';
 
-export default function ({categories, cards}) {
+export default function ({categories, cards, role}) {
 
     // console.log(categories)
 
@@ -10,7 +10,7 @@ export default function ({categories, cards}) {
 
 
     for (let category of categories) {
-        items.push(<Category title={category.title} oid={category.oid} cards={cards} key={category.id}/>)
+        items.push(<Category title={category.title} oid={category.oid} cards={cards} role={role} key={category.id}/>)
     }
 
     return (
