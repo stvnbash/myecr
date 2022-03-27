@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Card from '../components/Card';
 
 
-export default function Header({ title, oid, cards, role }) {
+export default function Category({ title, oid, cards, role }) {
 
     const items = []
     //  && (Object.keys(card.roles).includes(role[0]))

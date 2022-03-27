@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 
-export default function ({ title, oid, setShowRoleSelector, setRole }) {
+export default function RoleSelectorButton({ title, oid, setShowRoleSelector, setRole }) {
     // onclick={localStorage.setItem('userRole', oid)}
 
     // const setUserRole = async () => {

@@ -3,7 +3,7 @@ import RoleSelectorButton from './RoleSelectorButton';
 import { useState, useEffect } from 'react';
 
 
-export default function ({ roles, showRoleSelector, setShowRoleSelector, setRole }) {
+export default function RoleSelector({ roles, showRoleSelector, setShowRoleSelector, setRole }) {
     
 
     // loop over items of prop to get them into template

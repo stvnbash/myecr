@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Category from './Category';
 
-export default function ({categories, cards, role}) {
+export default function CategorySelector({categories, cards, role}) {
 
     // console.log(categories)
 
