@@ -19,14 +19,14 @@ function MyApp({ Component, pageProps }) {
     }, [])
   
   return (
-    <>
+    <div>
       <Meta/>
-      <Header setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole} class="fixed"/>
+      <Header setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole}/>
       {/* <Navbar /> */}
-      <main className="mx-auto pt-24 sm:px-10 bg-slate-200 h-screen overflow-y-scroll">
+      <main className="mx-auto pt-24 sm:px-10 bg-slate-200 overflow-auto h-screen">
         <Component {...pageProps} showRoleSelector={showRoleSelector} setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole}/>
       </main>
-    </>
+    </div>
   )
   
 }
