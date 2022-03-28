@@ -6,18 +6,22 @@ export default function Category({ title, oid, cards, role }) {
 
     const items = []
     //  && (Object.keys(card.roles).includes(role[0]))
+    // if (card.category.includes(oid) && (Object.keys(card.roles).includes(role[0]))) {
     cards.sort((a, b) => (a.title > b.title) ? 1 : -1)
     for (let card of cards) {
-        if (card.category.includes(oid) && (Object.keys(card.roles).includes(role[0]))) {
-            // console.log(card.roles[ role[0] ].url)
-            items.push(<Card
-                title={card.title ? card.title : "None"}
-                description={card.roles[ role[0] ].description ? card.roles[ role[0] ].description : "#"}
-                url={card.roles[ role[0] ].url ? card.roles[ role[0] ].url : "#"}
-                icon={card.icon ? card.icon : "https://instructure-uploads.s3.amazonaws.com/account_116420000000000001/attachments/944179/Bash_ECRslant.png"}
-                name={oid}
-                key={card.title}
-            />)
+        if (Object.keys(card.roles).includes(role[0])) {
+            if (card.roles[ role[0] ].category.includes(oid)) {
+
+                // console.log(card.roles[ role[0] ].url)
+                items.push(<Card
+                    title={card.title ? card.title : "None"}
+                    description={card.roles[ role[0] ].description ? card.roles[ role[0] ].description : "#"}
+                    url={card.roles[ role[0] ].url ? card.roles[ role[0] ].url : "#"}
+                    icon={card.icon ? card.icon : "https://instructure-uploads.s3.amazonaws.com/account_116420000000000001/attachments/944179/Bash_ECRslant.png"}
+                    name={oid}
+                    key={card.title}
+                    />)
+            }
         }
     }
 

@@ -1,326 +1,545 @@
 {
     "roles": [
-      {
-        "id": 1,
-        "oid": "STU",
-        "title": "Student"
-      },
-      {
-        "id": 2,
-        "oid": "TCH",
-        "title": "Teacher"
-      },
-      {
-        "id": 3,
-        "oid": "PAR",
-        "title": "Parent / Guardian"
-      },
-      {
-        "id": 4,
-        "oid": "STF",
-        "title": "Classified Staff"
-      },
-      {
-        "id": 5,
-        "oid": "SUB",
-        "title": "Substitute Teacher"
-      }
-
+        {
+            "id": 1,
+            "oid": "STU",
+            "title": "Student"
+        },
+        {
+            "id": 2,
+            "oid": "TCH",
+            "title": "Teacher"
+        },
+        {
+            "id": 3,
+            "oid": "PAR",
+            "title": "Parent / Guardian"
+        },
+        {
+            "id": 4,
+            "oid": "STF",
+            "title": "Classified Staff"
+        },
+        {
+            "id": 5,
+            "oid": "SUB",
+            "title": "Substitute Teacher"
+        }
     ],
-
     "categories": [
-      {
-        "id": 1,
-        "oid": "FEA",
-        "title": "Featured"
-      },
-      {
-        "id": 2,
-        "oid": "PRO",
-        "title": "Productivity"
-      },
-      {
-        "id": 3,
-        "oid": "ECR",
-        "title": "ECR Apps"
-      },
-      {
-        "id": 4,
-        "oid": "INS",
-        "title": "Instruction"
-      }
+        {
+            "id": 1,
+            "oid": "FEA",
+            "title": "Featured"
+        },
+        {
+            "id": 2,
+            "oid": "PRO",
+            "title": "Productivity"
+        },
+        {
+            "id": 3,
+            "oid": "ECR",
+            "title": "ECR Apps"
+        },
+        {
+            "id": 4,
+            "oid": "INS",
+            "title": "Instruction"
+        },
+        {
+            "id": 5,
+            "oid": "PAR",
+            "title": "Parent Center"
+        }
     ],
-
     "cards": [
-      {
-        "title": "Canvas",
-        "url": "#",
-        "icon": "https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s0-rw",
-        "category": ["FEA", "INS"],
-        "priority": true,
-        "roles": {
-          "STU": {
-            "description": "Canvas for Students - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "TCH": {
-            "description": "Canvas for Teachers",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "STF": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "SUB": {
-            "description": "Canvas for Substitutes",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "PAR": {
-            "description": "Canvas for Parents",
-            "url": "https://ecrchs.instructure.com/login/canvas"
-          }
-        }
-      },
-      {
-        "title": "Aeries",
-        "url": "#",
-        "icon": "https://play-lh.googleusercontent.com/6J47oNiSNizXA610JPz9SCcG8ej9wBJXELZlJOF0uhA5CzdTY0rP_bbPf4rwEAP7Ido=s0-rw",
-        "category": ["FEA", "INS"],
-        "priority": true,
-        "roles": {
-          "STU": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "TCH": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "STF": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "SUB": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "PAR": {
-            "description": "Canvas for Parents",
-            "url": "https://ecrchs.instructure.com/login/canvas"
-          }
-        }
-      },
-      {
-        "title": "ECR Email",
-        "url": "#",
-        "icon": "https://play-lh.googleusercontent.com/KSuaRLiI_FlDP8cM4MzJ23ml3og5Hxb9AapaGTMZ2GgR103mvJ3AAnoOFz1yheeQBBI=s0-rw",
-        "category": ["FEA", "PRO"],
-        "priority": true,
-        "roles": {
-          "STU": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "TCH": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "STF": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          }
-        }
-      },
-      {
-        "title": "OneDrive",
-        "url": "#",
-        "icon": "https://play-lh.googleusercontent.com/6AWr-qrhGT0ohjw0koq3bM8GHEFg1gTurald4FjCDg2RulTp4y_VVsYWUtw7Fo6lsQo=s0-rw",
-        "category": ["PRO"],
-        "priority": true,
-        "roles": {
-          "STU": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "TCH": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "STF": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "SUB": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          }
-        }
-      },
-      {
-        "title": "Microsoft Office Portal",
-        "url": "#",
-        "icon": "https://play-lh.googleusercontent.com/D6XDCje7pB0nNP1sOZkwD-tXkV0_As3ni21us5yZ71_sy0FTWv1s_MQBe1JUnHlgE94=s0-rw",
-        "category": ["PRO"],
-        "priority": true,
-        "roles": {
-          "STU": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "TCH": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "STF": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "SUB": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          }
-        }
-      },
-      {
-        "title": "Paycom",
-        "url": "#",
-        "icon": "https://play-lh.googleusercontent.com/JGhdoNAdO_gYOyPImRbn7CxdeY4a71ZtnhNvTZGsRyYTObPzCXXIOKpSOaQFraU6XUt-=s0-rw",
-        "category": ["FEA", "ECR"],
-        "priority": true,
-        "roles": {
-          "TCH": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "STF": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          }
-        }
-      },
-      {
-        "title": "Adobe",
-        "url": "#",
-        "icon": "https://play-lh.googleusercontent.com/WIVfY42FSk4naFCn42h694luehyzsifuiy2l0ok_-lFeb50qda_7j3YQdp0x2-S2_ykH=s0-rw",
-        "category": ["PRO"],
-        "priority": true,
-        "roles": {
-          "STU": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "TCH": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "STF": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          },
-          "SUB": {
-            "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-            "url": "https://ecrchs.instructure.com/login/saml"
-          }
-        }
-      },
-      {
-        "title": "Canva",
-        "url": "#",
-        "icon": "https://play-lh.googleusercontent.com/3aWGqSf3T_p3F6wc8FFvcZcnjWlxpZdNaqFVEvPwQ1gTOPkVoZwq6cYvfK9eCkwCXbRY=s0-rw",
-        "category": ["PRO"],
-        "priority": "yes",
-        "roles": {
-            "STU": {
-              "description": "Canvas for Students - view daily agendas, complete assignments, and take assessments",
-              "url": "https://ecrchs.instructure.com/login/saml"
-            },
-            "TCH": {
-              "description": "Canvas for Teachers",
-              "url": "https://ecrchs.instructure.com/login/saml"
-            },
-            "STF": {
-              "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-              "url": "https://ecrchs.instructure.com/login/saml"
+        {
+            "title": "Adobe",
+            "icon": "./icon/Adobe.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Access the Adobe Creative Cloud - enter your email to sign in",
+                    "url": "https://account.adobe.com/",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "Access the Adobe Creative Cloud - enter your email to sign in",
+                    "url": "https://account.adobe.com/",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "Access the Adobe Creative Cloud - enter your email to sign in",
+                    "url": "https://account.adobe.com/",
+                    "category": ["PRO"]
+                }
             }
-          }
-      },
-      {
-        "title": "Google Drive",
-        "url": "#",
-        "icon": "https://play-lh.googleusercontent.com/t-juVwXA8lDAk8uQ2L6d6K83jpgQoqmK1icB_l9yvhIAQ2QT_1XbRwg5IpY08906qEw=s0-rw",
-        "category": ["PRO"],
-        "priority": "yes",
-        "roles": {
-            "STU": {
-              "description": "Canvas for Students - view daily agendas, complete assignments, and take assessments",
-              "url": "https://ecrchs.instructure.com/login/saml"
-            },
-            "TCH": {
-              "description": "Canvas for Teachers",
-              "url": "https://ecrchs.instructure.com/login/saml"
-            },
-            "STF": {
-              "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-              "url": "https://ecrchs.instructure.com/login/saml"
+        },
+        {
+            "title": "Aeries",
+            "icon": "./icon/Aeries.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Access your grades, attendance, and more",
+                    "url": "https://elcaminoreal.asp.aeries.net/student/LoginParent.aspx",
+                    "category": ["FEA", "INS"]
+                },
+                "TCH": {
+                    "description": "View student information, grades, and attendance",
+                    "url": "https://elcaminoreal.asp.aeries.net/teacher/Login.aspx",
+                    "category": ["FEA", "INS"]
+                },
+                "STF": {
+                    "description": "Admin view for Aeries",
+                    "url": "https://elcaminoreal.asp.aeries.net/admin/Login.aspx",
+                    "category": ["FEA", "INS"]
+                },
+                "SUB": {
+                    "description": "Log in with your substitute teacher's credentials to take attendance",
+                    "url": "https://elcaminoreal.asp.aeries.net/teacher/Login.aspx",
+                    "category": ["FEA", "INS"]
+                },
+                "PAR": {
+                    "description": "View your student's grades, attendance, and more",
+                    "url": "https://elcaminoreal.asp.aeries.net/student/LoginParent.aspx",
+                    "category": ["PAR"]
+                }
             }
-          }
-      },
-      {
-        "title": "Password Reset",
-        "url": "#",
-        "icon": "",
-        "category": ["ECR"],
-        "priority": "yes",
-        "roles": {
-            "STU": {
-              "description": "Canvas for Students - view daily agendas, complete assignments, and take assessments",
-              "url": "https://ecrchs.instructure.com/login/saml"
-            },
-            "TCH": {
-              "description": "Canvas for Teachers",
-              "url": "https://ecrchs.instructure.com/login/saml"
-            },
-            "STF": {
-              "description": "Canvas for Students, Teachers, and Substitutes - view daily agendas, complete assignments, and take assessments",
-              "url": "https://ecrchs.instructure.com/login/saml"
+        },
+        {
+            "title": "Canva",
+            "icon": "./icon/Canva.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Access Canva - enter your email to sign in",
+                    "url": "https://www.canva.com/login",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "Access Canva - enter your email to sign in",
+                    "url": "https://www.canva.com/login",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "Access Canva - enter your email to sign in",
+                    "url": "https://www.canva.com/login",
+                    "category": ["PRO"]
+                }
             }
-          }
-      },
-      {
-        "title": "Aeries",
-        "url": "#",
-        "icon": "https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s0-rw",
-        "category": ["1", "4"],
-        "priority": "yes",
-        "roles": {
+        },
+        {
+            "title": "Canvas",
+            "icon": "./icon/Canvas.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "View daily agendas, complete assignments, and take assessments",
+                    "url": "https://ecrchs.instructure.com/login/saml",
+                    "category": ["FEA", "INS"]
+                },
+                "TCH": {
+                    "description": "Create assignments and assessments",
+                    "url": "https://ecrchs.instructure.com/login/saml",
+                    "category": ["FEA", "INS"]
+                },
+                "STF": {
+                    "description": "View Canvas courses",
+                    "url": "https://ecrchs.instructure.com/login/saml",
+                    "category": ["FEA", "INS"]
+                },
+                "SUB": {
+                    "description": "View Canvas courses",
+                    "url": "https://ecrchs.instructure.com/login/saml",
+                    "category": ["FEA", "INS"]
+                },
+                "PAR": {
+                    "description": "View your student's progress in class",
+                    "url": "https://ecrchs.instructure.com/login/canvas",
+                    "category": ["PAR"]
+                }
+            }
+        },
+        {
+            "title": "Edpuzzle",
+            "icon": "./icon/Edpuzzle.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "View Edpuzzle for your class",
+                    "url": "https://edpuzzle.com/",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "Set up Edpuzzle for your class",
+                    "url": "https://edpuzzle.com/",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Flipgrid",
+            "icon": "./icon/Flipgrid.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "View Flipgrid for your class",
+                    "url": "https://login.microsoftonline.com/common/adminconsent?client_id=f1143447-b07a-4557-b878-b78df8d45c13&redirect_uri=https://flipgrid.com/auth/sso&scope=User.Read&state=eyJncmlkX2lkIjo1Nzk1NDcsInJlZGlyZWN0X3RvIjoiLzQ2MjQxZD9hdj0xJnJlbWVtYmVyPWZhbHNlIiwiZ3JpZF90b2tlbiI6bnVsbCwicHJvdmlkZXIiOiJtaWNyb3NvZnQifQ",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "Set up Edpuzzle for your class",
+                    "url": "https://auth.flipgrid.com/educator",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "ECR Email",
+            "icon": "./icon/Gmail.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "View your myECR Email",
+                    "url": "http://mail.ecrchs.net/",
+                    "category": ["FEA", "PRO"]
+                },
+                "TCH": {
+                    "description": "View your myECR Email",
+                    "url": "http://mail.ecrchs.net/",
+                    "category": ["FEA", "PRO"]
+                },
+                "STF": {
+                    "description": "View your myECR Email",
+                    "url": "http://mail.ecrchs.net/",
+                    "category": ["FEA", "PRO"]
+                }
+            }
+        },
+        {
+            "title": "Google Drive",
+            "icon": "./icon/Gdrive.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Access your Google Drive files",
+                    "url": "https://drive.google.com/a/ecrchs.net",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "Access your Google Drive files",
+                    "url": "https://drive.google.com/a/ecrchs.net",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "Access your Google Drive files",
+                    "url": "https://drive.google.com/a/ecrchs.net",
+                    "category": ["PRO"]
+                }
+            }
+        },
+        {
+            "title": "GoTo Connect",
+            "icon": "./icon/GoTo.webp",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "Access your phone on the go; make and receive phone calls from anywhere",
+                    "url": "https://app.goto.com/",
+                    "category": ["ECR"]
+                },
+                "STF": {
+                    "description": "Access your phone on the go; make and receive phone calls from anywhere",
+                    "url": "https://app.goto.com/",
+                    "category": ["ECR"]
+                }
+            }
+        },
+        {
+            "title": "Kahoot",
+            "icon": "./icon/Kahoot.webp",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "",
+                    "url": "#",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Khan Academy",
+            "icon": "./icon/KhanAcademy.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://www.khanacademy.org/login",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://www.khanacademy.org/login",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Loom",
+            "icon": "./icon/Loom.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Easily make and share screen recordings",
+                    "url": "https://www.loom.com/login",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "Easily make and share screen recordings",
+                    "url": "https://www.loom.com/login",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "Easily make and share screen recordings",
+                    "url": "https://www.loom.com/login",
+                    "category": ["PRO"]
+                }
+            }
+        },
+        {
+            "title": "Microsoft Office Portal",
+            "icon": "./icon/MSOffice.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Access your Microsoft Office files and applications",
+                    "url": "https://portal.office.com/",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "Access your Microsoft Office files and applications",
+                    "url": "https://portal.office.com/",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "Access your Microsoft Office files and applications",
+                    "url": "https://portal.office.com/",
+                    "category": ["PRO"]
+                },
+                "SUB": {
+                    "description": "Access your Microsoft Office files and applications",
+                    "url": "https://portal.office.com/",
+                    "category": ["PRO"]
+                }
+            }
+        },
+        {
+            "title": "Nearpod",
+            "icon": "./icon/Nearpod.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://nearpod.com/student/",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://login.microsoftonline.com/common/oauth2/authorize?client_id=7b77b3a2-8490-49e1-8842-207cd0899af9&redirect_uri=https%3A%2F%2Fapp.nearpod.com%2Fct%2Factions%2Fuser%2Foffice365Login.php&resource=https://graph.windows.net+&response_type=code&state=20c13bf9723e0aa60a5a74ff8a1b6888&msafed=0&sso_reload=true",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "NetSuite",
+            "icon": "./icon/NetSuite.webp",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "",
+                    "url": "",
+                    "category": ["ECR"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "",
+                    "category": ["ECR"]
+                }
+            }
+        },
+        {
+            "title": "Newsela",
+            "icon": "./icon/Newsela.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://newsela.com/join/#/classcode",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=7fcc99cb-6f28-4982-924d-7237a70f7050&redirect_uri=https://newsela.com/complete/microsoft-oauth2/&state=auDEUccKvrMrELtYZL4zHgjUV9eOmpt0&response_type=code&scope=openid+offline_access+User.Read",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "OneDrive",
+            "icon": "./icon/OneDrive.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Access your files on any internet connected device",
+                    "url": "https://ecrchs-my.sharepoint.com/",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "Access your files on any internet connected device",
+                    "url": "https://ecrchs-my.sharepoint.com/",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "Access your files on any internet connected device",
+                    "url": "https://ecrchs-my.sharepoint.com/",
+                    "category": ["PRO"]
+                },
+                "SUB": {
+                    "description": "Access your files on any internet connected device",
+                    "url": "https://ecrchs-my.sharepoint.com/",
+                    "category": ["PRO"]
+                }
+            }
+        },
+        {
+            "title": "OneNote",
+            "icon": "./icon/OneNote.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://www.office.com/launch/onenote",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://www.office.com/launch/onenote",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://www.office.com/launch/onenote",
+                    "category": ["PRO"]
+                },
+                "SUB": {
+                    "description": "",
+                    "url": "https://www.office.com/launch/onenote",
+                    "category": ["PRO"]
+                }
+            }
+        },
+        {
+            "title": "Padlet",
+            "icon": "./icon/Padlet.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=ecc86b71-0d37-4144-8cbe-bebf3169a99a&redirect_uri=https%3A%2F%2Fpadlet.com%2Fauth%2Fms_graph%2Fcallback&response_mode=query&response_type=code&scope=openid+email+profile+https%3A%2F%2Fgraph.microsoft.com%2FUser.Read&state=eyJhbGciOiJIUzI1NiJ9.eyJ0ZW5hbnRfaWQiOiI2MDkwMyIsIm9yaWdpbiI6ImxvZ2luIiwiaXNzIjoiaHR0cHM6Ly9wYWRsZXQuY29tIn0.zrJo2Dve8ODARpp-7zTwEPrcjpWND5hM6KD3FLfilq8&tenant_id=60903",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=ecc86b71-0d37-4144-8cbe-bebf3169a99a&redirect_uri=https%3A%2F%2Fpadlet.com%2Fauth%2Fms_graph%2Fcallback&response_mode=query&response_type=code&scope=openid+email+profile+https%3A%2F%2Fgraph.microsoft.com%2FUser.Read&state=eyJhbGciOiJIUzI1NiJ9.eyJ0ZW5hbnRfaWQiOiI2MDkwMyIsIm9yaWdpbiI6ImxvZ2luIiwiaXNzIjoiaHR0cHM6Ly9wYWRsZXQuY29tIn0.zrJo2Dve8ODARpp-7zTwEPrcjpWND5hM6KD3FLfilq8&tenant_id=60903",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Paycom",
+            "icon": "./icon/Paycom.webp",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "View your timesheets, payroll, HR information, and more",
+                    "url": "#",
+                    "category": ["FEA", "ECR"]
+                },
+                "STF": {
+                    "description": "View your timesheets, payroll, HR information, and more",
+                    "url": "#",
+                    "category": ["FEA", "ECR"]
+                }
+            }
+        },
+        {
+            "title": "Quizlet",
+            "icon": "./icon/Quizlet.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://quizlet.com/google-oauth-redirector?from=https%3A%2F%2Fquizlet.com%2F&customParams=%7B%22signupOrigin%22%3A%22global-signup-modal-google%22%2C%22screenName%22%3A%22Homepage%2Findex%22%7D",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://quizlet.com/google-oauth-redirector?from=https%3A%2F%2Fquizlet.com%2F&customParams=%7B%22signupOrigin%22%3A%22global-signup-modal-google%22%2C%22screenName%22%3A%22Homepage%2Findex%22%7D",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Password Reset",
+            "icon": "./icon/reset-password-icon-29.jpg",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Change your MyECR account password",
+                    "url": "https://account.activedirectory.windowsazure.com/ChangePassword.aspx",
+                    "category": ["ECR"]
+                },
+                "TCH": {
+                    "description": "Change your MyECR account password",
+                    "url": "https://account.activedirectory.windowsazure.com/ChangePassword.aspx",
+                    "category": ["ECR"]
+                },
+                "STF": {
+                    "description": "Change your MyECR account password",
+                    "url": "https://account.activedirectory.windowsazure.com/ChangePassword.aspx",
+                    "category": ["ECR"]
+                }
+            }
+        },
+        {
+            "title": "Microsoft Teams",
+            "icon": "./icon/Teams.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://teams.microsoft.com/",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://teams.microsoft.com/",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://teams.microsoft.com/",
+                    "category": ["PRO"]
+                },
+                "SUB": {
+                    "description": "",
+                    "url": "https://teams.microsoft.com/",
+                    "category": ["PRO"]
+                }
+            }
         }
-      },
-      {
-        "title": "Aeries",
-        "url": "#",
-        "icon": "https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s0-rw",
-        "category": ["1", "4"],
-        "priority": "yes",
-        "roles": {
-        }
-      },
-      {
-        "title": "Aeries",
-        "url": "#",
-        "icon": "https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s0-rw",
-        "category": ["1", "4"],
-        "priority": "yes",
-        "roles": {
-        }
-      },
-      {
-        "title": "Aeries",
-        "url": "#",
-        "icon": "https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s0-rw",
-        "category": ["1", "4"],
-        "priority": "yes",
-        "roles": {
-        }
-      }
+        
     ]
-  }
+}
