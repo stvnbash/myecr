@@ -20,7 +20,7 @@ export default function Card({ title, url, icon, description }) {
                     {/* <div className="rounded-3xl border hover:border-4 hover:border-transparent shadow-md hover:shadow-xl duration-200 max-w-xs h-full sm:mx-5 mx-2 p-1 2xl:w-36"> */}
                     {/* <div class="rounded-3xl border hover:border-4 hover:border-transparent shadow-md hover:shadow-xl duration-200 max-w-xs h-full sm:mx-5 mx-2 p-1"> */}
                     <div className="rounded-3xl border hover:border-4 hover:border-transparent shadow-md hover:shadow-xl duration-200 max-w-xs h-full p-1">
-                        <img className="rounded-3xl mb-2 aspect-square" src={icon} alt={`Icon for ${title}`}/>
+                        <img className="rounded-3xl mb-2 aspect-square pointer-events-none" src={icon} alt={`Icon for ${title}`}/>
                         <p className="text-center text">{title}</p>
                     </div>
                 </a>

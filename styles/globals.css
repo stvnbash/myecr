@@ -1,13 +1,12 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -27,6 +26,8 @@ a {
   @apply w-full mx-auto max-w-screen-2xl p-8 md:p-16 pt-24;
 } */
 
-.container1 {
+/* .container1 {
   @apply  pt-24 md:px-10;
-}
+} */
+
+@tailwind utilities;
