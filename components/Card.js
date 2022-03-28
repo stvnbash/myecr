@@ -16,7 +16,7 @@ export default function Card({ title, url, icon, description }) {
             </div>
         </div> */}
             <Link href={url} passHref>
-                <a target="_blank" className="sm:w-40 mx-auto mb-5 sm:mb-8 font-medium hover:underline hover:underline-offset-2 duration-500" aria-label={`Click this tile to access ${title}`}>
+                <a target="_blank" className="sm:w-40 mx-auto mb-5 sm:mb-6 font-medium hover:underline hover:underline-offset-2 duration-500 bg-white rounded-3xl" aria-label={`Click this tile to access ${title}`}>
                     {/* <div className="rounded-3xl border hover:border-4 hover:border-transparent shadow-md hover:shadow-xl duration-200 max-w-xs h-full sm:mx-5 mx-2 p-1 2xl:w-36"> */}
                     {/* <div class="rounded-3xl border hover:border-4 hover:border-transparent shadow-md hover:shadow-xl duration-200 max-w-xs h-full sm:mx-5 mx-2 p-1"> */}
                     <div className="rounded-3xl border hover:border-4 hover:border-transparent shadow-md hover:shadow-xl duration-200 max-w-xs h-full p-1">

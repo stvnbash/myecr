@@ -3,6 +3,8 @@ import Navbar from '../components/Navbar'
 // import React, { useState } from 'react';
 import '../styles/globals.css'
 import { useState, useEffect } from 'react';
+import Head from "next/head";
+import Meta from '../components/Meta'
 
 function MyApp({ Component, pageProps }) {
 
@@ -18,9 +20,10 @@ function MyApp({ Component, pageProps }) {
   
   return (
     <>
-      <Header setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole}/>
+      <Meta/>
+      <Header setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole} class="fixed"/>
       {/* <Navbar /> */}
-      <main className="mx-auto pt-24 sm:px-10">
+      <main className="mx-auto pt-24 sm:px-10 bg-slate-200 h-screen overflow-y-scroll">
         <Component {...pageProps} showRoleSelector={showRoleSelector} setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole}/>
       </main>
     </>
