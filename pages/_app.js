@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
       <Meta/>
       <Header setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole}/>
       {/* <Navbar /> */}
-      <main className="mx-auto pt-24 sm:px-10 bg-slate-200 overflow-y-auto h-screen">
+      <main className="mx-auto pt-24 sm:px-10 bg-slate-200 overflow-y-auto min-h-screen">
         <Component {...pageProps} showRoleSelector={showRoleSelector} setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole}/>
       </main>
     </div>
