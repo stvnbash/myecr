@@ -3,7 +3,8 @@ import Link from 'next/link';
 export default function Header({ setShowRoleSelector, role, setRole }) {
     return (
         <header>
-            <div className='header fixed top-0 left-0 z-50 h-15'>
+            <div className='header fixed top-0 left-0 z-50 h-14'>
+            {/* <div className='header fixed top-0 z-40 w-full backdrop-blur max-w-8xl mx-auto'> */}
                 <h1>myECR</h1>
                 <div className='flex'>
                     {/* <Link href='http://ecrchs.instructure.com/login/saml'><a className="px-2">Canvas</a></Link>

@@ -19,7 +19,7 @@ a {
 }
 
 .header {
-  @apply bg-blue-800 p-4 flex items-center justify-between w-full text-yellow-500 font-bold sticky top-0;
+  @apply bg-blue-800 p-4 flex items-center justify-between text-yellow-500 font-bold top-0;
 }
 
 /* .container {
