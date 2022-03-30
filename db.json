@@ -109,6 +109,67 @@
             }
         },
         {
+            "title": "Albert",
+            "icon": "./icon/Albert.jpg",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://api.albert.io/auth/google?redirectUri=https://www.albert.io/social",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://api.albert.io/auth/google?redirectUri=https://www.albert.io/social",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Attendance Portal",
+            "icon": "./icon/apx_general_events_app_1.png",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "",
+                    "url": "https://ecrchs.schoolriver.com",
+                    "category": ["FEA", "ECR"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://ecrchs.schoolriver.com",
+                    "category": ["FEA", "ECR"]
+                },
+                "SUB": {
+                    "description": "",
+                    "url": "https://ecrchs.schoolriver.com",
+                    "category": ["FEA", "ECR"]
+                },
+                "PAR": {
+                    "description": "",
+                    "url": "http://attendance.ecrchs.net/",
+                    "category": ["PAR"]
+                }
+            }
+        },
+        {
+            "title": "CAASPP",
+            "icon": "./icon/CAASPP-logo-no-text.png",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://login1.cloud1.tds.cambiumast.com/student/V545/Pages/LoginShell.aspx?c=California",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://login1.cloud1.tds.cambiumast.com/student/V545/Pages/LoginShell.aspx?c=California",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
             "title": "Canva",
             "icon": "./icon/Canva.webp",
             "priority": true,
@@ -167,15 +228,27 @@
             "icon": "./icon/Edpuzzle.webp",
             "priority": true,
             "roles": {
-                "STU": {
-                    "description": "View Edpuzzle for your class",
-                    "url": "https://edpuzzle.com/",
-                    "category": ["INS"]
-                },
                 "TCH": {
                     "description": "Set up Edpuzzle for your class",
                     "url": "https://edpuzzle.com/",
                     "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "ERP",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "",
+                    "url": "https://purchasing.ecrchs.net",
+                    "category": ["ECR"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://purchasing.ecrchs.net",
+                    "category": ["ECR"]
                 }
             }
         },
@@ -193,28 +266,6 @@
                     "description": "Set up Edpuzzle for your class",
                     "url": "https://auth.flipgrid.com/educator",
                     "category": ["INS"]
-                }
-            }
-        },
-        {
-            "title": "ECR Email",
-            "icon": "./icon/Gmail.webp",
-            "priority": true,
-            "roles": {
-                "STU": {
-                    "description": "View your myECR Email",
-                    "url": "http://mail.ecrchs.net/",
-                    "category": ["FEA", "PRO"]
-                },
-                "TCH": {
-                    "description": "View your myECR Email",
-                    "url": "http://mail.ecrchs.net/",
-                    "category": ["FEA", "PRO"]
-                },
-                "STF": {
-                    "description": "View your myECR Email",
-                    "url": "http://mail.ecrchs.net/",
-                    "category": ["FEA", "PRO"]
                 }
             }
         },
@@ -241,6 +292,28 @@
             }
         },
         {
+            "title": "ECR Email",
+            "icon": "./icon/Gmail.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "View your myECR Email",
+                    "url": "http://mail.ecrchs.net/",
+                    "category": ["FEA", "PRO"]
+                },
+                "TCH": {
+                    "description": "View your myECR Email",
+                    "url": "http://mail.ecrchs.net/",
+                    "category": ["FEA", "PRO"]
+                },
+                "STF": {
+                    "description": "View your myECR Email",
+                    "url": "http://mail.ecrchs.net/",
+                    "category": ["FEA", "PRO"]
+                }
+            }
+        },
+        {
             "title": "GoTo Connect",
             "icon": "./icon/GoTo.webp",
             "priority": true,
@@ -258,6 +331,67 @@
             }
         },
         {
+            "title": "Technology HelpDesk",
+            "icon": "./icon/helpdesk-icon-2.png",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "You can also email techsupport@ecrchs.net to create a ticket",
+                    "url": "https://help.ecrchs.net",
+                    "category": ["ECR"]
+                },
+                "STF": {
+                    "description": "You can also email techsupport@ecrchs.net to create a ticket",
+                    "url": "https://help.ecrchs.net",
+                    "category": ["ECR"]
+                }
+            }
+        },
+        {
+            "title": "Houghton Mifflin Harcourt",
+            "icon": "./icon/HMH.jpg",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://hmhco.com/api/external-sso/access?sp=ed&connection=CA-ECRCH-00078253",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://hmhco.com/api/external-sso/access?sp=ed&connection=CA-ECRCH-00078253",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Intranet",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://sites.google.com/ecrchs.net/student",
+                    "category": ["FEA", "ECR"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://sites.google.com/ecrchs.net/staff",
+                    "category": ["FEA", "ECR"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://sites.google.com/ecrchs.net/staff",
+                    "category": ["FEA", "ECR"]
+                },
+                "PAR": {
+                    "description": "",
+                    "url": "https://sites.google.com/ecrchs.net/student/parent-center",
+                    "category": ["PAR"]
+                }
+            }
+        },
+        {
             "title": "Kahoot",
             "icon": "./icon/Kahoot.webp",
             "priority": true,
@@ -266,6 +400,18 @@
                     "description": "",
                     "url": "#",
                     "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Kelly Services (Substitute Request)",
+            "icon": "./icon/kellyeducation_fullcolor_padding2.svg",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "",
+                    "url": "#",
+                    "category": ["ECR"]
                 }
             }
         },
@@ -283,6 +429,28 @@
                     "description": "",
                     "url": "https://www.khanacademy.org/login",
                     "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Live Chat with Tech Office (8am-3pm)",
+            "icon": "./icon/LiveChat.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://tawk.to/ecrchs",
+                    "category": ["FEA","ECR"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://tawk.to/ecrchs",
+                    "category": ["FEA","ECR"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://tawk.to/ecrchs",
+                    "category": ["FEA","ECR"]
                 }
             }
         },
@@ -305,6 +473,23 @@
                     "description": "Easily make and share screen recordings",
                     "url": "https://www.loom.com/login",
                     "category": ["PRO"]
+                }
+            }
+        },
+        {
+            "title": "McGraw Hill",
+            "icon": "./icon/MGH_Logo_RGB.svg",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "#",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "#",
+                    "category": ["INS"]
                 }
             }
         },
@@ -332,6 +517,23 @@
                     "description": "Access your Microsoft Office files and applications",
                     "url": "https://portal.office.com/",
                     "category": ["PRO"]
+                }
+            }
+        },
+        {
+            "title": "Naviance",
+            "icon": "./icon/Naviance_powerschool_w_tagline-5916c.svg",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://accounts.naviance.com/login/callback?connection=12444USPU-student-saml-3",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://accounts.naviance.com/login/callback?connection=12444USPU-staff-saml-2",
+                    "category": ["INS"]
                 }
             }
         },
@@ -382,6 +584,23 @@
                 "TCH": {
                     "description": "",
                     "url": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=7fcc99cb-6f28-4982-924d-7237a70f7050&redirect_uri=https://newsela.com/complete/microsoft-oauth2/&state=auDEUccKvrMrELtYZL4zHgjUV9eOmpt0&response_type=code&scope=openid+offline_access+User.Read",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "NEWA",
+            "icon": "./icon/NWEA.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://test.mapnwea.org",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://teach.mapnwea.org",
                     "category": ["INS"]
                 }
             }
@@ -475,6 +694,45 @@
             }
         },
         {
+            "title": "Peardeck",
+            "icon": "./icon/Peardeck.jpg",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://app.peardeck.com/join",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://app.peardeck.com/authPicker?finalDestinationUrl=%2Fhome%2F%3Faction%3Dsignin",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Password Reset",
+            "icon": "./icon/reset-password-icon-29.jpg",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Change your MyECR account password",
+                    "url": "https://account.activedirectory.windowsazure.com/ChangePassword.aspx",
+                    "category": ["FEA", "ECR"]
+                },
+                "TCH": {
+                    "description": "Change your MyECR account password",
+                    "url": "https://account.activedirectory.windowsazure.com/ChangePassword.aspx",
+                    "category": ["ECR"]
+                },
+                "STF": {
+                    "description": "Change your MyECR account password",
+                    "url": "https://account.activedirectory.windowsazure.com/ChangePassword.aspx",
+                    "category": ["ECR"]
+                }
+            }
+        },
+        {
             "title": "Quizlet",
             "icon": "./icon/Quizlet.webp",
             "priority": true,
@@ -492,23 +750,67 @@
             }
         },
         {
-            "title": "Password Reset",
-            "icon": "./icon/reset-password-icon-29.jpg",
+            "title": "* RoyalPass",
+            "icon": "./icon/undraw_medicine_b-1-ol.svg",
             "priority": true,
             "roles": {
                 "STU": {
-                    "description": "Change your MyECR account password",
-                    "url": "https://account.activedirectory.windowsazure.com/ChangePassword.aspx",
-                    "category": ["ECR"]
+                    "description": "",
+                    "url": "https://royalpass.ecrchs.net/",
+                    "category": ["FEA", "ECR"]
                 },
                 "TCH": {
-                    "description": "Change your MyECR account password",
-                    "url": "https://account.activedirectory.windowsazure.com/ChangePassword.aspx",
+                    "description": "",
+                    "url": "https://royalpass.ecrchs.net/",
+                    "category": ["FEA", "ECR"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://royalpass.ecrchs.net/",
+                    "category": ["FEA", "ECR"]
+                },
+                "SUB": {
+                    "description": "",
+                    "url": "https://royalpass.ecrchs.net/",
+                    "category": ["FEA", "ECR"]
+                },
+                "PAR": {
+                    "description": "",
+                    "url": "https://royalpass.ecrchs.net/",
+                    "category": ["PAR"]
+                }
+            }
+        },
+        {
+            "title": "SpringBoard",
+            "icon": "./icon/SpringBoard.png",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://elcaminorealcharterhighschoolca.springboardonline.org/",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://elcaminorealcharterhighschoolca.springboardonline.org/",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "SRM",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "",
+                    "url": "http://srm.ecrchs.net",
                     "category": ["ECR"]
                 },
                 "STF": {
-                    "description": "Change your MyECR account password",
-                    "url": "https://account.activedirectory.windowsazure.com/ChangePassword.aspx",
+                    "description": "",
+                    "url": "http://srm.ecrchs.net",
                     "category": ["ECR"]
                 }
             }
@@ -537,6 +839,50 @@
                     "description": "",
                     "url": "https://teams.microsoft.com/",
                     "category": ["PRO"]
+                }
+            }
+        },
+        {
+            "title": "Textbook Portal",
+            "icon": "./icon/textbooks_helloID.png",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "http://textbooks.ecrchs.net",
+                    "category": ["ECR"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://tportal.ecrchs.net",
+                    "category": ["ECR"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://tportal.ecrchs.net",
+                    "category": ["ECR"]
+                },
+                "PAR": {
+                    "description": "",
+                    "url": "http://textbooks.ecrchs.net",
+                    "category": ["PAR"]
+                }
+            }
+        },
+        {
+            "title": "Whiteboard.fi",
+            "icon": "./icon/Whiteboardfi.png",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://whiteboard.fi",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://whiteboard.fi",
+                    "category": ["INS"]
                 }
             }
         }
