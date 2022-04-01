@@ -13,6 +13,9 @@ function MyApp({ Component, pageProps }) {
   const [showRoleSelector, setShowRoleSelector] = useState(false)
   const [role, setRole] = useState([null, null])
 
+  const [search, setSearch] = useState('')
+
+
   useEffect(() => {
     // console.log(localStorage)
     localStorage.getItem('role') ? setRole([localStorage.getItem('role'), localStorage.getItem('role-title')]) : setRole([null, null])
@@ -23,13 +26,16 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Meta />
-      <Header setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole} />
-      {/* <Nav /> */}
-      {/* <Navbar /> */}
-      <main className="mx-auto pt-16 md:pt-20 sm:px-10 bg-slate-200 overflow-y-auto min-h-screen flex flex-col justify-between">
-        <Component {...pageProps} showRoleSelector={showRoleSelector} setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole} className="mb-auto" />
-        <Footer />
-      </main>
+      <div className='min-h-screen flex flex-col overflow-hidden'>
+        {/* <Header setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole} setSearch={setSearch}/> */}
+        {/* <Nav /> */}
+        <Navbar setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole} setSearch={setSearch}/>
+        <main className="pt-2 md:pt-4 sm:px-10 bg-slate-200 overflow-y-auto  flex flex-grow flex-col justify-between z-10 h-0">
+          <Component {...pageProps} showRoleSelector={showRoleSelector} setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole} search={search} className="mb-auto" />
+          <Footer />
+        </main>
+
+      </div>
     </div>
   )
 

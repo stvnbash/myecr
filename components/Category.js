@@ -2,28 +2,53 @@ import Link from 'next/link';
 import Card from '../components/Card';
 
 
-export default function Category({ title, oid, cards, role }) {
+export default function Category({ title, oid, cards, role, search }) {
 
+    cards.sort((a, b) => (a.title > b.title) ? 1 : -1)
     const items = []
     //  && (Object.keys(card.roles).includes(role[0]))
     // if (card.category.includes(oid) && (Object.keys(card.roles).includes(role[0]))) {
-    cards.sort((a, b) => (a.title > b.title) ? 1 : -1)
     for (let card of cards) {
         if (Object.keys(card.roles).includes(role[0])) {
             if (card.roles[ role[0] ].category.includes(oid)) {
+                if ( search === '' || card.title.toLowerCase().includes(search.toLowerCase()) || card.roles[ role[0] ].description.toLowerCase().includes(search.toLowerCase()) ){
+                    // console.log(card.roles[ role[0] ].url)
+                    items.push(<Card
+                        title={card.title ? card.title : "None"}
+                        description={card.roles[ role[0] ].description ? card.roles[ role[0] ].description : "#"}
+                        url={card.roles[ role[0] ].url ? card.roles[ role[0] ].url : "#"}
+                        icon={card.icon ? card.icon : "https://instructure-uploads.s3.amazonaws.com/account_116420000000000001/attachments/944179/Bash_ECRslant.png"}
+                        name={oid}
+                        key={card.title}
+                        />)
 
-                // console.log(card.roles[ role[0] ].url)
-                items.push(<Card
-                    title={card.title ? card.title : "None"}
-                    description={card.roles[ role[0] ].description ? card.roles[ role[0] ].description : "#"}
-                    url={card.roles[ role[0] ].url ? card.roles[ role[0] ].url : "#"}
-                    icon={card.icon ? card.icon : "https://instructure-uploads.s3.amazonaws.com/account_116420000000000001/attachments/944179/Bash_ECRslant.png"}
-                    name={oid}
-                    key={card.title}
-                    />)
+                }
+
             }
         }
     }
+
+    // Avoided using map because each element that didn't return item produced 'undefined' in the array
+    // const items = cards
+    // .map(card => {
+    //     if (Object.keys(card.roles).includes(role[0])) {
+    //         if (card.roles[ role[0] ].category.includes(oid)) {
+    //             return <Card
+    //                 title={card.title ? card.title : "None"}
+    //                 // description={card.roles[ role[0] ].description ? card.roles[ role[0] ].description : "#"}
+    //                 // url={card.roles[ role[0] ].url ? card.roles[ role[0] ].url : "#"}
+    //                 url={"#"}
+    //                 icon={card.icon ? card.icon : "https://instructure-uploads.s3.amazonaws.com/account_116420000000000001/attachments/944179/Bash_ECRslant.png"}
+    //                 name={oid}
+    //                 key={card.title}
+    //                 />
+    //         }
+    //     }
+    // })
+
+    // console.log(title, items)
+
+
 
 
     return (

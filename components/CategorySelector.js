@@ -1,17 +1,18 @@
 import Link from 'next/link';
 import Category from './Category';
 
-export default function CategorySelector({categories, cards, role}) {
+export default function CategorySelector({categories, cards, role, search}) {
 
     // console.log(categories)
 
-    const items = []
     categories.sort((a, b) => (a.id > b.id) ? 1 : -1)
-
-
-    for (let category of categories) {
-        items.push(<Category title={category.title} oid={category.oid} cards={cards} role={role} key={category.id}/>)
-    }
+    
+    // const items = []
+    // for (let category of categories) {
+    //     items.push(<Category title={category.title} oid={category.oid} cards={cards} role={role} key={category.id}/>)
+    // }
+    
+    const items = categories.map(category => <Category title={category.title} oid={category.oid} cards={cards} role={role} key={category.id} search={search}/>)
 
     return (
         <div>
