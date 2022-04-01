@@ -17,7 +17,9 @@ function classNames(...classes) {
 
 export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }) {
   const router = useRouter();
-  const showHomepageActions = router.pathname !== "/" ? false : true;
+  const onIndexPage = router.pathname !== "/" ? false : true;
+
+  if (!(role[0] && onIndexPage)) {setSearch('')}
   
   return (
     <Disclosure as="nav" className="bg-gray-800 sticky top-0 left-0 z-50 w-full">
@@ -67,7 +69,7 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
                   </div>
                 </div>
                   {
-                    role[0] && showHomepageActions &&
+                    role[0] && onIndexPage &&
                     <div className='grow flex-none hidden sm:block sm:ml-6 my-auto '>
                         <Search setSearch={setSearch} key="desktop"/>
                     </div>
@@ -75,7 +77,7 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               {
-                role[0] && showHomepageActions &&
+                role[0] && onIndexPage &&
                 <div className='flex flex-col'>
                     <p className='text-white px-3 pt-2 rounded-md text-sm font-medium mx-auto'>{role ? role[1].toUpperCase() : ''}</p>
                     <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { localStorage.removeItem('role'); setRole([null, null]); setShowRoleSelector(true); }}>change role</button>
@@ -150,7 +152,7 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
 
           <Disclosure.Panel className="sm:hidden">
             {
-              role[0] && showHomepageActions &&
+              role[0] && onIndexPage &&
               <div className='grow flex-none px-2 pt-2 pb-3 space-y-1 mx-auto w-[80%]'>
                   <Search setSearch={setSearch} key="mobile"/>
               </div>
