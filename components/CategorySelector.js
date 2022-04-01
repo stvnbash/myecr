@@ -14,9 +14,9 @@ export default function CategorySelector({categories, cards, role}) {
     }
 
     return (
-        <>
+        <div>
         {items}
-        </>
+        </div>
     )
 
 }

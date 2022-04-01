@@ -521,6 +521,18 @@
             }
         },
         {
+            "title": "My MealTime",
+            "icon": "./icon/MyMealTime.webp",
+            "priority": true,
+            "roles": {
+                "PAR": {
+                    "description": "Complete your free/reduced application or deposit funds in your meal account.",
+                    "url": "https://www.mymealtime.com/",
+                    "category": ["PAR"]
+                }
+            }
+        },
+        {
             "title": "Naviance",
             "icon": "./icon/Naviance_powerschool_w_tagline-5916c.svg",
             "priority": true,
@@ -863,7 +875,7 @@
                     "category": ["ECR"]
                 },
                 "PAR": {
-                    "description": "",
+                    "description": "View textbook statuses and fees/fines.",
                     "url": "http://textbooks.ecrchs.net",
                     "category": ["PAR"]
                 }

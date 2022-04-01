@@ -46,7 +46,7 @@ export default function Category({ title, oid, cards, role }) {
                 <Card title="Adobe" url="" icon="https://play-lh.googleusercontent.com/WIVfY42FSk4naFCn42h694luehyzsifuiy2l0ok_-lFeb50qda_7j3YQdp0x2-S2_ykH=s0-rw"/> */}
                 </div>
             </div>
-            : <></>
+            : <div></div>
     )
 
 }
