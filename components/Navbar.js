@@ -54,8 +54,8 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
                 <div className="hidden sm:block sm:ml-6 my-auto">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <Link href={item.href}><a
-                        key={item.name}
+                      <Link href={item.href} key={item.name}><a
+                        
                         
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
@@ -159,8 +159,8 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
             }
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
-                <Link href={item.href}><a
-                  key={item.name}
+                <Link href={item.href} key={item.name}><a
+                  
                   as="a"
                   
                   className={classNames(
