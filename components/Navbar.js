@@ -11,6 +11,10 @@ const navigation = [
   { name: 'Calendar', href: '/calendar', current: false },
 ]
 
+const logo = {
+  img: "./logo/myECR v2 (white) centered.png",
+}
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -41,13 +45,13 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <img
-                    className="block lg:hidden h-16 w-auto"
-                    src="./logo/myECR v2 (white) centered.png"
+                    className="block lg:hidden h-16 w-auto ml-6"
+                    src={logo.img}
                     alt="myECR"
                   />
                   <img
                     className="hidden lg:block h-16 w-auto"
-                    src="./logo/myECR v2 (white) centered.png"
+                    src={logo.img}
                     alt="myECR"
                   />
                 </div>
@@ -70,15 +74,15 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
                 </div>
                   {
                     role[0] && onIndexPage &&
-                    <div className='grow flex-none hidden sm:block sm:ml-6 my-auto '>
-                        <Search setSearch={setSearch} key="desktop"/>
+                    <div className='sm:grow sm:flex-none sm:block ml-6 my-auto'>
+                        <Search setSearch={setSearch} key="search-desktop"/>
                     </div>
                   }
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div className="sticky inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               {
                 role[0] && onIndexPage &&
-                <div className='flex flex-col'>
+                <div className='sm:flex sm:flex-col hidden'>
                     <p className='text-white px-3 pt-2 rounded-md text-sm font-medium mx-auto'>{role ? role[1].toUpperCase() : ''}</p>
                     <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { localStorage.removeItem('role'); setRole([null, null]); setShowRoleSelector(true); }}>change role</button>
                 </div>
@@ -153,27 +157,34 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
           <Disclosure.Panel className="sm:hidden">
             {
               role[0] && onIndexPage &&
-              <div className='grow flex-none px-2 pt-2 pb-3 space-y-1 mx-auto w-[80%]'>
-                  <Search setSearch={setSearch} key="mobile"/>
+              <div className='flex flex-col'>
+                  <p className='text-white px-3 pt-2 rounded-md text-sm font-medium mx-auto'>{role ? role[1].toUpperCase() : ''}</p>
+                  <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { localStorage.removeItem('role'); setRole([null, null]); setShowRoleSelector(true); }}>change role</button>
               </div>
             }
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <Link href={item.href} key={item.name}><a
-                  
-                  as="a"
-                  
-                  className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
+                
+                as="a"
+                
+                className={classNames(
+                  item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                  'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
-                >
+                  >
                   {item.name}
                 </a></Link>
               ))}
             </div>
           </Disclosure.Panel>
+          {/* {
+            role[0] && onIndexPage &&
+            <div className='grow flex-none px-2 pt-2 pb-3 space-y-1 mx-auto w-[80%]'>
+                <Search setSearch={setSearch} key="search-mobile"/>
+            </div>
+          } */}
         </>
       )}
     </Disclosure>

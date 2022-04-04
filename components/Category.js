@@ -17,7 +17,7 @@ export default function Category({ title, oid, cards, role, search }) {
                         title={card.title ? card.title : "None"}
                         description={card.roles[ role[0] ].description ? card.roles[ role[0] ].description : "#"}
                         url={card.roles[ role[0] ].url ? card.roles[ role[0] ].url : "#"}
-                        icon={card.icon ? card.icon : "https://instructure-uploads.s3.amazonaws.com/account_116420000000000001/attachments/944179/Bash_ECRslant.png"}
+                        icon={card.icon ? card.icon : "./icon/ECRslant.png"}
                         name={oid}
                         key={card.title}
                         />)

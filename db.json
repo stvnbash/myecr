@@ -158,13 +158,13 @@
             "priority": true,
             "roles": {
                 "STU": {
-                    "description": "",
-                    "url": "https://login1.cloud1.tds.cambiumast.com/student/V545/Pages/LoginShell.aspx?c=California",
+                    "description": "California Assessment of Student Performance and Progress, Smarter Balanced Assessment",
+                    "url": "https://login1.cloud1.tds.cambiumast.com/student/V584/Pages/LoginShell.aspx?c=California",
                     "category": ["INS"]
                 },
                 "TCH": {
-                    "description": "",
-                    "url": "https://login1.cloud1.tds.cambiumast.com/student/V545/Pages/LoginShell.aspx?c=California",
+                    "description": "California Assessment of Student Performance and Progress, Smarter Balanced Assessment",
+                    "url": "https://login1.cloud1.tds.cambiumast.com/student/V584/Pages/LoginShell.aspx?c=California",
                     "category": ["INS"]
                 }
             }
