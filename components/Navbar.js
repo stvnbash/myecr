@@ -45,7 +45,7 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <img
-                    className="block lg:hidden h-16 w-auto ml-6"
+                    className="block lg:hidden h-16 w-auto ml-6 sm:ml-0"
                     src={logo.img}
                     alt="myECR"
                   />
@@ -74,7 +74,7 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
                 </div>
                   {
                     role[0] && onIndexPage &&
-                    <div className='sm:grow sm:flex-none sm:block ml-6 my-auto'>
+                    <div className='sm:grow flex sm:block ml-6 my-auto'>
                         <Search setSearch={setSearch} key="search-desktop"/>
                     </div>
                   }
@@ -157,7 +157,7 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
           <Disclosure.Panel className="sm:hidden">
             {
               role[0] && onIndexPage &&
-              <div className='flex flex-col'>
+              <div className='flex flex-col px-2'>
                   <p className='text-white px-3 pt-2 rounded-md text-sm font-medium mx-auto'>{role ? role[1].toUpperCase() : ''}</p>
                   <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { localStorage.removeItem('role'); setRole([null, null]); setShowRoleSelector(true); }}>change role</button>
               </div>
