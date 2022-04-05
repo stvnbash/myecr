@@ -12,11 +12,11 @@ export default function Alert({ Alert_Title, Alert_Body, Alert_MD, Alert_Date })
                 <div className="sm:flex w-full">
                     {/* <p className="font-bold">{Alert_Title}</p> */}
                     {/* <p className="text-sm">{Alert_Body}</p> */}
-
-                    <ReactMarkdown children={Alert_MD} linkTarget="_blank" className="prose max-w-none sm:flex-1
-                    text-teal-900 prose-headings:text-teal-900 prose-a:text-teal-900 prose-strong:text-teal-900 prose-ul:text-teal-900 prose-ol:text-teal-900
-                    prose-headings:m-0 prose-li:m-0 prose-p:m-0
-                    "/>
+                    <div className="prose max-w-none sm:flex-1
+                        text-teal-900 prose-headings:text-teal-900 prose-a:text-teal-900 prose-strong:text-teal-900 prose-ul:text-teal-900 prose-ol:text-teal-900
+                        prose-headings:m-0 prose-li:m-0 prose-p:m-0">
+                        <ReactMarkdown children={Alert_MD} linkTarget="_blank" />
+                    </div>
                     <p className="text-sm ml-auto md:ml-2 mt-auto text-right">{Alert_Date}</p>
                 </div>
             </div>
