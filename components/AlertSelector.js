@@ -26,13 +26,13 @@ export default function AlertSelector({ alerts, role }) {
         }
     }
 
-    if (typeof window !== 'undefined') {
-        console.log('You are on the browser')
-        // 👉️ can use localStorage here
-        } else {
-        console.log('You are on the server')
-        // 👉️ can't use localStorage
-        }
+    // if (typeof window !== 'undefined') {
+    // console.log('You are on the browser')
+    // // 👉️ can use localStorage here
+    // } else {
+    // console.log('You are on the server')
+    // // 👉️ can't use localStorage
+    // }
     
     // const items = categories.map(category => <Category title={category.title} oid={category.oid} cards={cards} role={role} key={category.id} search={search}/>)
 
