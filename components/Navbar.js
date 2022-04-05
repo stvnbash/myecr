@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment, useEffect } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link';
@@ -23,8 +23,10 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
   const router = useRouter();
   const onIndexPage = router.pathname !== "/" ? false : true;
 
-  if (!(role[0] && onIndexPage)) {setSearch('')}
-  
+  useEffect(() => {
+    if (!(role[0] && onIndexPage)) {setSearch('')}
+  }, [])
+
   return (
     <Disclosure as="nav" className="bg-gray-800 sticky top-0 left-0 z-50 w-full">
       {({ open }) => (
@@ -45,12 +47,12 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <img
-                    className="block lg:hidden h-16 w-auto ml-6 sm:ml-0"
+                    className="block lg:hidden h-16 w-auto ml-6 sm:ml-0 pointer-events-none"
                     src={logo.img}
                     alt="myECR"
                   />
                   <img
-                    className="hidden lg:block h-16 w-auto"
+                    className="hidden lg:block h-16 w-auto pointer-events-none"
                     src={logo.img}
                     alt="myECR"
                   />
