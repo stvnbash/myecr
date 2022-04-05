@@ -3,9 +3,11 @@ import CategorySelector from '../components/CategorySelector.js';
 import RoleSelector from '../components/RoleSelector.js';
 import { useState, useEffect } from 'react';
 import Meta from '../components/Meta'
+import Alert from '../components/Alert.js';
+import AlertSelector from '../components/AlertSelector.js';
 
 
-export default function Home({ roles, categories, cards, showRoleSelector, setShowRoleSelector, role, setRole, search}) {
+export default function Home({ roles, categories, cards, showRoleSelector, setShowRoleSelector, role, setRole, search, alerts}) {
 
   // const [role, setRole] = useState(null)
 
@@ -26,11 +28,14 @@ export default function Home({ roles, categories, cards, showRoleSelector, setSh
   //   // }
   // }, [])
 
+
   return (
     <>
       <Meta title="Apps"/>
 
       {/* {role === null ? <RoleSelector roles={roles} /> : <></>} */}
+      <AlertSelector alerts={alerts} role={role}/>
+
       <RoleSelector roles={roles} showRoleSelector={showRoleSelector} setShowRoleSelector={setShowRoleSelector} setRole={setRole}/>
       <CategorySelector categories={categories} cards={cards} role={role} search={search}/>
       {/* <h1 className="text-3xl font-bold underline">
@@ -47,13 +52,14 @@ export default function Home({ roles, categories, cards, showRoleSelector, setSh
 
 // Data
 export async function getStaticProps() {
-  const { roles, categories, cards } = await import('../db.json');
+  const { roles, categories, alerts, cards } = await import('../db.json');
 
 
   return {
     props: {
       roles,
       categories,
+      alerts,
       cards
     }
   }

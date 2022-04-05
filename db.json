@@ -51,6 +51,34 @@
             "id": 5,
             "oid": "PAR",
             "title": "Parent Center"
+        },
+        {
+            "id": 6,
+            "oid": "OFF",
+            "title": "Offices"
+        }
+    ],
+    "alerts": [
+        {
+            "id": 3,
+            "md": "#### Welcome to the new MyECR \n We are still working on setting up a few apps!  [Click here](https://sso.ecrchs.net) to access: Google, GoTo, Kelly, McGraw Hill, Naviance, Netsuite, and Paycom.",
+            "url": "https://sso.ecrchs.net",
+            "start": "2022-04-05 4:50 AM",
+            "end": "2022-04-06 12:59 PM"
+        },
+        {
+            "id": 2,
+            "md": "#### Aeries is experiencing issues \n Please be aware that Aeries may be slow today.",
+            "start": "2022-04-05 12:00 AM",
+            "end": "2022-04-05 1:00 PM",
+            "roles": ["TCH", "STF"]
+        },
+        {
+            "id": 1,
+            "md": "#### Student Equity Survey \n Please [click here](#) to take the survey.",
+            "start": "2022-04-05 00:00 AM",
+            "end": "2022-04-05 4:00 PM",
+            "roles": ["STU"]
         }
     ],
     "cards": [
@@ -895,6 +923,69 @@
                     "description": "",
                     "url": "https://whiteboard.fi",
                     "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Laptop Contract & Insurance",
+            "icon": "./icon/LaptopContract.jpg",
+            "priority": true,
+            "roles": {
+                "PAR": {
+                    "description": "Complete the ECRCHS Laptop Contract and Purchase our Optional Protection Plan",
+                    "url": "https://portal.ecrchs.net/",
+                    "category": ["PAR"]
+                }
+            }
+        },
+        {
+            "title": "College Office",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "",
+                    "category": ["OFF"]
+                },
+                "PAR": {
+                    "description": "",
+                    "url": "",
+                    "category": ["OFF"]
+                }
+            }
+        },
+        {
+            "title": "Counseling Office",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "",
+                    "category": ["OFF"]
+                },
+                "PAR": {
+                    "description": "",
+                    "url": "",
+                    "category": ["OFF"]
+                }
+            }
+        },
+        {
+            "title": "Health Office",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "",
+                    "category": ["OFF"]
+                },
+                "PAR": {
+                    "description": "",
+                    "url": "",
+                    "category": ["OFF"]
                 }
             }
         }

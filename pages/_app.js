@@ -30,7 +30,10 @@ function MyApp({ Component, pageProps }) {
         {/* <Header setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole} setSearch={setSearch}/> */}
         {/* <Nav /> */}
         <Navbar setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole} setSearch={setSearch}/>
+
         <main className="pt-2 md:pt-4 sm:px-10 bg-slate-200 overflow-y-auto  flex flex-grow flex-col justify-between z-10 h-0">
+          {/* Decided to implement Announcements for Index only
+          <Announcement Announcement_Title={"Welcome to the new MyECR"} Announcement_Body={"We are still working on migrating the following apps: Google, GoTo, Kelly, McGraw Hill, Naviance, Netsuite, Paycom"} /> */}
           <Component {...pageProps} showRoleSelector={showRoleSelector} setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole} search={search} className="mb-auto" />
           <Footer />
         </main>
