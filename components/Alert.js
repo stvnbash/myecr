@@ -15,7 +15,7 @@ export default function Alert({ Alert_Title, Alert_Body, Alert_MD, Alert_Date })
                     <div className="prose max-w-none sm:flex-1
                         text-teal-900 prose-headings:text-teal-900 prose-a:text-teal-900 prose-strong:text-teal-900 prose-ul:text-teal-900 prose-ol:text-teal-900
                         prose-headings:m-0 prose-li:m-0 prose-p:m-0">
-                        <ReactMarkdown children={Alert_MD} linkTarget="_blank" />
+                        <ReactMarkdown linkTarget="_blank">{Alert_MD}</ReactMarkdown>
                     </div>
                     <p className="text-sm ml-auto md:ml-2 mt-auto text-right">{Alert_Date}</p>
                 </div>
