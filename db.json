@@ -60,24 +60,46 @@
     ],
     "alerts": [
         {
-            "id": 3,
-            "md": "#### Welcome to the new MyECR \n We are still working on setting up a few apps!  [Click here](https://sso.ecrchs.net) to access: Google, GoTo, Kelly, McGraw Hill, Naviance, Netsuite, and Paycom.",
-            "url": "https://sso.ecrchs.net",
-            "start": "2022-04-05 4:50 AM",
-            "end": "2022-04-06 12:59 PM"
+            "id": 0,
+            "title": "Sample Alert Title",
+            "body": "This is a sample alert body",
+            "start": "2022-04-01 0:00 AM",
+            "end": "2022-04-01 11:59 PM",
+            "roles": ["STU", "TCH", "STF", "SUB", "PAR"]
         },
         {
-            "id": 2,
-            "md": "#### Aeries is experiencing issues \n Please be aware that Aeries may be slow today.",
-            "start": "2022-04-05 12:00 AM",
-            "end": "2022-04-05 1:00 PM",
-            "roles": ["TCH", "STF"]
+            "id": 0,
+            "md": "#### **Sample Alert Markdown Title** \n Samlpe Markdown Body  [Sample link](#)",
+            "start": "2022-04-01 0:00 AM",
+            "end": "2022-04-01 12:59 PM"
+        },
+        {
+            "id": 0,
+            "title": "Instructions",
+            "body": "Below are instructions for using alerts",
+            "md": "1. Create a new JSON object with an id, start, and end. \n 2. You may use any combination of the title, body, and md fields. \n 3. The roles array is optional",
+            "start": "2022-04-01 0:00 AM",
+            "end": "2022-04-01 12:59 PM"
         },
         {
             "id": 1,
-            "md": "#### Student Equity Survey \n Please [click here](#) to take the survey.",
+            "md": "#### **Welcome to the new MyECR** \n We are still working on setting up a few apps!  [Click here](https://sso.ecrchs.net) to access: Google, GoTo, Kelly, McGraw Hill, Naviance, Netsuite, and Paycom.",
+            "start": "2022-04-05 4:50 AM",
+            "end": "2022-04-07 12:59 PM"
+        },
+        {
+            "id": 2,
+            "md": "#### **Aeries is experiencing issues** \n Please be aware that Aeries may be slow today.",
+            "start": "2022-04-05 12:00 AM",
+            "end": "2022-05-05 1:00 PM",
+            "roles": ["TCH", "STF"]
+        },
+        {
+            "id": 3,
+            "title": "Student Equity Survey",
+            "md": "Please [click here](#) to take the survey.",
             "start": "2022-04-05 00:00 AM",
-            "end": "2022-04-05 4:00 PM",
+            "end": "2022-04-08 4:00 PM",
             "roles": ["STU"]
         }
     ],

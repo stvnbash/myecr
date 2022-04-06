@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Header({ setShowRoleSelector, role, setRole }) {
     return (
-        <footer>
+        <footer className='mt-auto'>
             <div className="flex p-3 sticky bottom-0 left-0 z-50 w-full border-slate-400 border-t">
                 <h1>&copy; El Camino Real Charter High School</h1>
                 {/* <a href="https://timkoech.co.ke" class="text-gray-700 hover:text-gray-800 m-2  ">

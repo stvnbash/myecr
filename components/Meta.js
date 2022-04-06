@@ -21,6 +21,8 @@ export default function Meta({ title, keywords, description }) {
             <meta property="og:site_name" content={siteName} key="ogsitename" /> */}
             <meta property="og:title" content={title === 'myECR' ? 'myECR' : `${title} | MyECR`} key="ogtitle" />
             <meta property="og:description" content={description} key="ogdesc" />
+
+            {/* <meta http-equiv="refresh" content="300" /> */}
         </Head>
     )
 }
