@@ -8,7 +8,7 @@ import { useSession, signIn, signOut } from "next-auth/react"
 
 
 const navigation = [
-  { name: 'Dashboard', href: '/', current: false },
+  { name: 'Home', href: '/', current: false },
   { name: 'Calendar', href: '/calendar', current: false },
 ]
 
