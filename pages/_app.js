@@ -8,28 +8,40 @@ import { useState, useEffect } from 'react';
 import Head from "next/head";
 import Meta from '../components/Meta'
 
-function MyApp({ Component, pageProps }) {
+// For authentication
+import { SessionProvider } from "next-auth/react"
+
+// function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps: { session, ...pageProps } }) {
 
   const [showRoleSelector, setShowRoleSelector] = useState(false)
-  const [role, setRole] = useState([null, null])
+  const [role, setRole] = useState([null, null, null, null])
 
   const [search, setSearch] = useState('')
 
 
   useEffect(() => {
     // console.log(localStorage)
-    localStorage.getItem('role') ? setRole([localStorage.getItem('role'), localStorage.getItem('role-title')]) : setRole([null, null])
+    localStorage.getItem('role') 
+    ? setRole([localStorage.getItem('role'), 
+      localStorage.getItem('role-title'), 
+      localStorage.getItem('role-signin') == 'true',
+      localStorage.getItem('role-emailRegex')
+    ]) 
+    : setRole([null, null, null, null])
+
     localStorage.getItem('role') ? setShowRoleSelector(false) : setShowRoleSelector(true)
     // console.log(role)
   }, [])
 
   return (
+    <SessionProvider session={session}>
     <div>
       <Meta />
       <div className='min-h-screen flex flex-col overflow-hidden'>
         {/* <Header setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole} setSearch={setSearch}/> */}
         {/* <Nav /> */}
-        <Navbar setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole} setSearch={setSearch}/>
+        <Navbar setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole} setSearch={setSearch} />
 
         <main className="pt-2 md:pt-4 sm:px-10 bg-slate-200 overflow-y-auto  flex flex-grow flex-col justify-between z-10 h-0">
           {/* Decided to implement Announcements for Index only
@@ -40,6 +52,7 @@ function MyApp({ Component, pageProps }) {
 
       </div>
     </div>
+    </SessionProvider>
   )
 
 }

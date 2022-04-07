@@ -4,6 +4,7 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link';
 import { useRouter } from "next/router";
 import Search from './Search';
+import { useSession, signIn, signOut } from "next-auth/react"
 
 
 const navigation = [
@@ -19,9 +20,11 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+
 export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }) {
   const router = useRouter();
   const onIndexPage = router.pathname !== "/" ? false : true;
+  const { data: session } = useSession()
 
   useEffect(() => {
     if (!(role[0] && onIndexPage)) {setSearch('')}
@@ -86,7 +89,17 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
                 role[0] && onIndexPage &&
                 <div className='sm:flex sm:flex-col hidden'>
                     <p className='text-white px-3 pt-2 rounded-md text-sm font-medium mx-auto'>{role ? role[1].toUpperCase() : ''}</p>
-                    <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { localStorage.removeItem('role'); setRole([null, null]); setShowRoleSelector(true); }}>change role</button>
+                    <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { localStorage.removeItem('role'); setRole([null, null, null, null]); setShowRoleSelector(true); }}>change role</button>
+                </div>
+              }
+              {
+                session
+                ? <div className='sm:flex sm:flex-col hidden'>
+                    <p className='text-white px-3 pt-2 rounded-md text-sm font-medium mx-auto'>{session.user.name}</p>
+                    <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signOut(); }}>sign out</button>
+                </div>
+                : <div className='sm:flex sm:flex-row hidden'>
+                  <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signIn("azure-ad"); }}>sign in</button>
                 </div>
               }
                 {/* <button
@@ -157,13 +170,26 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
           </div>
 
           <Disclosure.Panel className="sm:hidden">
+            <div className="flex place-content-center">
             {
               role[0] && onIndexPage &&
               <div className='flex flex-col px-2'>
                   <p className='text-white px-3 pt-2 rounded-md text-sm font-medium mx-auto'>{role ? role[1].toUpperCase() : ''}</p>
-                  <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { localStorage.removeItem('role'); setRole([null, null]); setShowRoleSelector(true); }}>change role</button>
+                  <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { localStorage.removeItem('role'); setRole([null, null, null, null]); setShowRoleSelector(true); }}>change role</button>
               </div>
             }
+            {
+              session
+              ? <div className='flex flex-col px-2'>
+                  <p className='text-white px-3 pt-2 rounded-md text-sm font-medium mx-auto'>{session.user.name}</p>
+                  <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signOut(); }}>sign out</button>
+              </div>
+              :
+              <div className='flex flex-row px-2'>
+                <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signIn("azure-ad"); }}>sign in</button>
+              </div>
+            }
+            </div>
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <Link href={item.href} key={item.name}><a

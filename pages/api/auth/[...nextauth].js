@@ -1,7 +1,7 @@
 import NextAuth from "next-auth"
-import GithubProvider from "next-auth/providers/github"
 import AzureADProvider from "next-auth/providers/azure-ad";
 
+// console.log("hello", process.env)
 export default NextAuth({
   // Configure one or more authentication providers
   providers: [
@@ -12,5 +12,3 @@ export default NextAuth({
     }),
   ]
 })
-
-

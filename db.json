@@ -1,29 +1,39 @@
 {
     "roles": [
         {
-            "id": 1,
-            "oid": "STU",
-            "title": "Student"
-        },
-        {
-            "id": 2,
-            "oid": "TCH",
-            "title": "Teacher"
-        },
-        {
-            "id": 3,
-            "oid": "PAR",
-            "title": "Parent / Guardian"
-        },
-        {
             "id": 4,
-            "oid": "STF",
-            "title": "Classified Staff"
+            "oid": "STU",
+            "title": "Student",
+            "signin": false,
+            "emailRegex": "^.+@ecrchs.org$"
+        },
+        {
+            "id": 1,
+            "oid": "TCH",
+            "title": "Teacher",
+            "signin": true,
+            "emailRegex": "^(?!sub.).+@ecrchs.net$"
         },
         {
             "id": 5,
+            "oid": "PAR",
+            "title": "Parent / Guardian",
+            "signin": false,
+            "emailRegex": ""
+        },
+        {
+            "id": 2,
+            "oid": "STF",
+            "title": "Classified Staff",
+            "signin": true,
+            "emailRegex": "^(?!sub.).+@ecrchs.net$"
+        },
+        {
+            "id": 3,
             "oid": "SUB",
-            "title": "Substitute Teacher"
+            "title": "Substitute Teacher",
+            "signin": true,
+            "emailRegex": "^.+@ecrchs.net$"
         }
     ],
     "categories": [
@@ -348,17 +358,17 @@
             "roles": {
                 "STU": {
                     "description": "View your myECR Email",
-                    "url": "http://mail.ecrchs.net/",
+                    "url": "https://mail.google.com/a/ecrchs.net",
                     "category": ["FEA", "PRO"]
                 },
                 "TCH": {
                     "description": "View your myECR Email",
-                    "url": "http://mail.ecrchs.net/",
+                    "url": "https://mail.google.com/a/ecrchs.net",
                     "category": ["FEA", "PRO"]
                 },
                 "STF": {
                     "description": "View your myECR Email",
-                    "url": "http://mail.ecrchs.net/",
+                    "url": "https://mail.google.com/a/ecrchs.net",
                     "category": ["FEA", "PRO"]
                 }
             }
