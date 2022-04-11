@@ -236,17 +236,17 @@
             "roles": {
                 "STU": {
                     "description": "Access Canva - enter your email to sign in",
-                    "url": "https://www.canva.com/login",
+                    "url": "https://myapps.microsoft.com/signin/ca846750-9476-450e-b1db-211f9a05431b?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
                     "category": ["PRO"]
                 },
                 "TCH": {
                     "description": "Access Canva - enter your email to sign in",
-                    "url": "https://www.canva.com/login",
+                    "url": "https://myapps.microsoft.com/signin/ca846750-9476-450e-b1db-211f9a05431b?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
                     "category": ["PRO"]
                 },
                 "STF": {
                     "description": "Access Canva - enter your email to sign in",
-                    "url": "https://www.canva.com/login",
+                    "url": "https://myapps.microsoft.com/signin/ca846750-9476-450e-b1db-211f9a05431b?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
                     "category": ["PRO"]
                 }
             }
