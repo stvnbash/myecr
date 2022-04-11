@@ -61,7 +61,8 @@ export default function RoleSelector({ roles, showRoleSelector, setShowRoleSelec
                         <h1 className="text-2xl mb-4 font-bold">PLEASE SELECT YOUR ROLE</h1>
                         <div>
                             {/* <a className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10"> */}
-                            <a className="grid grid-cols-1 gap-4 mt-10">
+                            {/* <a className="grid grid-cols-1 gap-4 mt-10"> */}
+                            <a className="grid grid-cols-1 gap-4">
                                 {items}
                                 {
                                     !session && <div className='border-0 border-t-2 border-black py-4'>

@@ -24,11 +24,12 @@ function classNames(...classes) {
 export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }) {
   const router = useRouter();
   const onIndexPage = router.pathname !== "/" ? false : true;
-  const { data: session } = useSession()
+  const { data: session, status } = useSession()
+
 
   useEffect(() => {
-    if (!(role[0] && onIndexPage)) {setSearch('')}
-  }, [])
+    !( role[0] && onIndexPage && ((role[2] && session) || !role[2]) ) && setSearch('')
+  }, [role, onIndexPage, session])
 
   return (
     <Disclosure as="nav" className="bg-gray-800 sticky top-0 left-0 z-50 w-full">
@@ -49,16 +50,16 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <img
+                  <Link href='/'><a><img
                     className="block lg:hidden h-16 w-auto ml-6 sm:ml-0 pointer-events-none"
                     src={logo.img}
                     alt="myECR"
-                  />
-                  <img
+                  /></a></Link>
+                  <Link href='/'><a><img
                     className="hidden lg:block h-16 w-auto pointer-events-none"
                     src={logo.img}
                     alt="myECR"
-                  />
+                  /></a></Link>
                 </div>
                 <div className="hidden sm:block sm:ml-6 my-auto">
                   <div className="flex space-x-4">
@@ -78,10 +79,11 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
                   </div>
                 </div>
                   {
-                    role[0] && onIndexPage &&
-                    <div className='sm:grow flex sm:block ml-6 my-auto'>
+                    role[0] && onIndexPage && ((role[2] && session) || !role[2])
+                    && <div className='sm:grow flex sm:block ml-6 my-auto'>
                         <Search setSearch={setSearch} key="search-desktop"/>
                     </div>
+                    // : setSearch('')
                   }
               </div>
               <div className="sticky inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -98,7 +100,7 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
                     <p className='text-white px-3 pt-2 rounded-md text-sm font-medium mx-auto'>{session.user.name}</p>
                     <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signOut(); }}>sign out</button>
                 </div>
-                : <div className='sm:flex sm:flex-row hidden'>
+                : status === "unauthenticated" && <div className='sm:flex sm:flex-row hidden'>
                   <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signIn("azure-ad"); }}>sign in</button>
                 </div>
               }
@@ -184,7 +186,7 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
                   <p className='text-white px-3 pt-2 rounded-md text-sm font-medium mx-auto'>{session.user.name}</p>
                   <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signOut(); }}>sign out</button>
               </div>
-              :
+              : status === "unauthenticated" && 
               <div className='flex flex-row px-2'>
                 <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signIn("azure-ad"); }}>sign in</button>
               </div>

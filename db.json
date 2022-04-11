@@ -93,15 +93,15 @@
         },
         {
             "id": 1,
-            "md": "#### **Welcome to the new MyECR** \n We are still working on setting up a few apps!  [Click here](https://sso.ecrchs.net) to access: Google, GoTo, Kelly, McGraw Hill, Naviance, Netsuite, and Paycom.",
+            "md": "#### **Welcome to the new MyECR** \n We are still working on setting up a few apps!  [Click here](https://sso.ecrchs.net) to access: Google, GoTo, Kelly, McGraw Hill, Naviance, and Paycom.",
             "start": "2022-04-05 4:50 AM",
-            "end": "2022-04-07 12:59 PM"
+            "end": "2022-06-03 11:59 PM"
         },
         {
             "id": 2,
             "md": "#### **Aeries is experiencing issues** \n Please be aware that Aeries may be slow today.",
             "start": "2022-04-05 12:00 AM",
-            "end": "2022-05-05 1:00 PM",
+            "end": "2022-04-06 1:00 PM",
             "roles": ["TCH", "STF"]
         },
         {
@@ -633,12 +633,12 @@
             "roles": {
                 "TCH": {
                     "description": "",
-                    "url": "",
+                    "url": "https://myapps.microsoft.com/signin/2787618c-b957-4077-a6be-3d77b0817d41?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
                     "category": ["ECR"]
                 },
                 "STF": {
                     "description": "",
-                    "url": "",
+                    "url": "https://myapps.microsoft.com/signin/2787618c-b957-4077-a6be-3d77b0817d41?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
                     "category": ["ECR"]
                 }
             }

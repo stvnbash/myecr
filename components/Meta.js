@@ -8,7 +8,7 @@ export default function Meta({ title, keywords, description }) {
             <meta name='keywords' content={keywords} />
             <meta name='description' content={description} />
             <link rel='icon' href='/favicon.ico' />
-            <title>{title === 'myECR' ? 'myECR' : `${title} | MyECR`}</title>
+            <title>{title === 'myECR' ? 'myECR' : `MyECR | ${title}`}</title>
 
             {/* https://www.netlify.com/blog/2020/05/08/improve-your-seo-and-social-sharing-cards-with-next.js/ */}
             {/* Twitter */}
@@ -19,7 +19,7 @@ export default function Meta({ title, keywords, description }) {
             {/* <meta property="og:url" content={currentURL} key="ogurl" />
             <meta property="og:image" content={previewImage} key="ogimage" />
             <meta property="og:site_name" content={siteName} key="ogsitename" /> */}
-            <meta property="og:title" content={title === 'myECR' ? 'myECR' : `${title} | MyECR`} key="ogtitle" />
+            <meta property="og:title" content={title === 'myECR' ? 'myECR' : `MyECR | ${title}`} key="ogtitle" />
             <meta property="og:description" content={description} key="ogdesc" />
 
             {/* <meta http-equiv="refresh" content="300" /> */}
