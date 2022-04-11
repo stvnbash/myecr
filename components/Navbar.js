@@ -29,7 +29,7 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
 
   useEffect(() => {
     !( role[0] && onIndexPage && ((role[2] && session) || !role[2]) ) && setSearch('')
-  }, [role, onIndexPage, session])
+  }, [role, onIndexPage, session, setSearch])
 
   return (
     <Disclosure as="nav" className="bg-gray-800 sticky top-0 left-0 z-50 w-full">

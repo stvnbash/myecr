@@ -7,7 +7,7 @@ import Alert from '../components/Alert.js';
 import AlertSelector from '../components/AlertSelector.js';
 
 import { useSession, signIn, signOut } from "next-auth/react"
-import AuthPrompt from '../components/Authprompt.js';
+import AuthPrompt from '../components/AuthPrompt.js';
 
 
 export default function Home({ roles, categories, cards, showRoleSelector, setShowRoleSelector, role, setRole, search, alerts }) {
