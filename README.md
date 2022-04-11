@@ -1,9 +1,22 @@
 ## About this project
 - By Steven Bash
+- This project is a "one stop shop" dashboard for ECRCHS stakeholders to access applicaitons from one central location.
+- Key Features: apps page with categories and search, alerts, user roles, azure ad authentication
 ---
 ---
 ## Tailwind Ui
 `npm install @headlessui/react @heroicons/react`
+---
+---
+## [Pull new updates from original GitHub repository into forked GitHub repository](https://stackoverflow.com/questions/3903817/pull-new-updates-from-original-github-repository-into-forked-github-repository)
+If you want to do it without cli, you can do it fully on the Github website.
+
+1. Go to your fork repository.
+2. Click on New pull request.
+3. Make sure to set your fork as the base repository, and the original (upstream) repository as a head repository. Usually, you only want to sync the master branch.
+4. Create a new pull request.
+5. Select the arrow to the right of the merging button, and make sure choose to rebase instead of merge. Then click the button. This way, it will not produce unnecessary merge commit.
+6. Done.
 ---
 ---
 Success! Created myecr at C:\Users\S.Bash\myecr
