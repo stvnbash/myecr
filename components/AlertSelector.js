@@ -6,6 +6,11 @@ export default function AlertSelector({ alerts, role }) {
     // const current = new Date();
     // const date = `${current.getFullYear()}-${current.getMonth()+1 > 9 ? current.getMonth()+1 : '0' + (current.getMonth()+1)}-${current.getDate() > 9 ? current.getDate() : '0' + current.getDate()}`;
 
+    // A note about dates
+    // In Chrome, the following work: new Date('2022-04-05 4:50 AM') and new Date('2022-06-03 11:59 PM')
+    // In Firefox, the above do not work.  Firefox will return invalid date as it does not support the AM and PM
+    // So, we will use the following: new Date('2022-04-05 4:50') and new Date('2022-06-03 23:59')
+
     const currentDate = new Date();
     const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
@@ -18,6 +23,7 @@ export default function AlertSelector({ alerts, role }) {
     for (let alert of alerts) {
         const startDate = new Date(alert.start)
         const endDate = new Date(alert.end)
+        // console.log("currentDate", currentDate)
         // console.log("start", startDate, "\n", startDate < currentDate)
         // console.log("end", endDate, "\n", endDate > currentDate)
         if (role[0] && startDate <= currentDate && endDate >= currentDate) {
