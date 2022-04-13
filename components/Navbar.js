@@ -98,7 +98,7 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
                 session
                 ? <div className='sm:flex sm:flex-col hidden'>
                     <p className='text-white px-3 pt-2 rounded-md text-sm font-medium mx-auto'>{session.user.name}</p>
-                    <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signOut(); }}>sign out</button>
+                    <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signOut({redirect: false}); }}>sign out</button>
                 </div>
                 : status === "unauthenticated" && <div className='sm:flex sm:flex-row hidden'>
                   <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signIn("azure-ad"); }}>sign in</button>
@@ -184,7 +184,7 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
               session
               ? <div className='flex flex-col px-2'>
                   <p className='text-white px-3 pt-2 rounded-md text-sm font-medium mx-auto'>{session.user.name}</p>
-                  <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signOut(); }}>sign out</button>
+                  <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signOut({redirect: false}); }}>sign out</button>
               </div>
               : status === "unauthenticated" && 
               <div className='flex flex-row px-2'>
