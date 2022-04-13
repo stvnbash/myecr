@@ -98,7 +98,12 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
                 session
                 ? <div className='sm:flex sm:flex-col hidden'>
                     <p className='text-white px-3 pt-2 rounded-md text-sm font-medium mx-auto'>{session.user.name}</p>
-                    <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signOut({redirect: false}); }}>sign out</button>
+                    {/* this option signs you out of the app, but not out of the Microsoft IDP.  With {redirect: false}, the page does not reload on sign out
+                    <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signOut({redirect: false}); }}>sign out</button> */}
+                    {/* This option signs you out of the app and out of the Microsoft IDP, but the user sees a flash of the sign in button before they are redirected to sign out of the Microsoft IDP
+                    <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={async() => { await signOut({redirect: false}).then(router.push(`https://login.microsoftonline.com/3103011a-6832-4e4a-be24-2aac2968b4dc/oauth2/logout?post_logout_redirect_uri=${encodeURIComponent(window.location.href)}`)); }}>sign out</button> */}
+                    {/* This option signs you out of the app and out of the Microsoft IDP, but a custom configuration of callbackUrl to allow for URLs on different sites was required */}
+                    <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signOut({callbackUrl: `https://login.microsoftonline.com/3103011a-6832-4e4a-be24-2aac2968b4dc/oauth2/logout?post_logout_redirect_uri=${encodeURIComponent(window.location.href)}`}); }}>sign out</button>
                 </div>
                 : status === "unauthenticated" && <div className='sm:flex sm:flex-row hidden'>
                   <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signIn("azure-ad"); }}>sign in</button>
@@ -184,7 +189,7 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
               session
               ? <div className='flex flex-col px-2'>
                   <p className='text-white px-3 pt-2 rounded-md text-sm font-medium mx-auto'>{session.user.name}</p>
-                  <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signOut({redirect: false}); }}>sign out</button>
+                  <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { signOut({callbackUrl: `https://login.microsoftonline.com/3103011a-6832-4e4a-be24-2aac2968b4dc/oauth2/logout?post_logout_redirect_uri=${encodeURIComponent(window.location.href)}`}); }}>sign out</button>
               </div>
               : status === "unauthenticated" && 
               <div className='flex flex-row px-2'>

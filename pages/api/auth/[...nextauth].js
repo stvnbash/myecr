@@ -10,5 +10,17 @@ export default NextAuth({
       clientSecret: process.env.AZURE_AD_CLIENT_SECRET,
       tenantId: process.env.AZURE_AD_TENANT_ID,
     }),
-  ]
+  ],
+
+  // custom callback configurationt to allow for URLs on different sites
+  callbacks: {
+    async redirect({ url, baseUrl }) {
+      // Allows relative callback URLs
+      if (url.startsWith("/")) return new URL(url, baseUrl).toString()
+      // Allows callback URLs on the same origin
+      else if (new URL(url).origin === baseUrl) return url
+      return url
+    }
+  }
+
 })

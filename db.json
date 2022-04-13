@@ -470,7 +470,7 @@
             "roles": {
                 "TCH": {
                     "description": "",
-                    "url": "#",
+                    "url": "https://sso.ecrchs.net",
                     "category": ["ECR"]
                 }
             }
@@ -543,12 +543,12 @@
             "roles": {
                 "STU": {
                     "description": "",
-                    "url": "#",
+                    "url": "https://sso.ecrchs.net",
                     "category": ["INS"]
                 },
                 "TCH": {
                     "description": "",
-                    "url": "#",
+                    "url": "https://sso.ecrchs.net",
                     "category": ["INS"]
                 }
             }
@@ -599,12 +599,12 @@
             "roles": {
                 "STU": {
                     "description": "",
-                    "url": "https://accounts.naviance.com/login/callback?connection=12444USPU-student-saml-3",
+                    "url": "https://sso.ecrchs.net",
                     "category": ["INS"]
                 },
                 "TCH": {
                     "description": "",
-                    "url": "https://accounts.naviance.com/login/callback?connection=12444USPU-staff-saml-2",
+                    "url": "https://sso.ecrchs.net",
                     "category": ["INS"]
                 }
             }
@@ -755,12 +755,12 @@
             "roles": {
                 "TCH": {
                     "description": "View your timesheets, payroll, HR information, and more",
-                    "url": "#",
+                    "url": "https://sso.ecrchs.net",
                     "category": ["FEA", "ECR"]
                 },
                 "STF": {
                     "description": "View your timesheets, payroll, HR information, and more",
-                    "url": "#",
+                    "url": "https://sso.ecrchs.net",
                     "category": ["FEA", "ECR"]
                 }
             }
