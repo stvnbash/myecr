@@ -79,7 +79,7 @@
         },
         {
             "id": 0,
-            "md": "#### **Sample Alert Markdown Title** \n Samlpe Markdown Body  [Sample link](#)",
+            "md": "#### **Sample Alert Markdown Title** \n Samlpe Markdown Body  [Sample link](#)  \n Sample text on new line (two spaces followed by newline character)",
             "start": "2022-04-01 0:00",
             "end": "2022-04-01 13:59"
         },
@@ -87,13 +87,13 @@
             "id": 0,
             "title": "Instructions",
             "body": "Below are instructions for using alerts",
-            "md": "1. Create a new JSON object with an id, start, and end. \n 2. You may use any combination of the title, body, and md fields. \n 3. The roles array is optional",
+            "md": "1. Create a new JSON object with an id, start, and end. \n 2. You may use any combination of the title, body, and md fields. \n 3. The roles array is optional \n 4. Two spaces followed by the newline character will create a line break in your text when using markdown.",
             "start": "2022-04-01 0:00",
             "end": "2022-04-01 13:59"
         },
         {
             "id": 1,
-            "md": "#### **Welcome to the new MyECR** \n We are still working on setting up a few apps!  [Click here](https://sso.ecrchs.net) to access: Google, GoTo, Kelly, McGraw Hill, Naviance, and Paycom.",
+            "md": "#### **Welcome to the new MyECR** \n We are still working on setting up a few apps!  [Click here](https://sso.ecrchs.net) to access: Google, GoTo, Kelly, McGraw Hill, Naviance, and Paycom.  \n Encounter an issue or have feedback?  [Click here](https://docs.google.com/forms/d/e/1FAIpQLSd26tpoYyeeZR8-VbUSsHyG4YvkX1mpq5X7VerMlTTL0fEaLA/viewform?usp=sf_link) to access the feedback form.",
             "start": "2022-04-05 4:50",
             "end": "2022-06-03 23:59"
         },
@@ -977,12 +977,12 @@
             "roles": {
                 "STU": {
                     "description": "",
-                    "url": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=369999&type=d",
                     "category": ["OFF"]
                 },
                 "PAR": {
                     "description": "",
-                    "url": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=369999&type=d",
                     "category": ["OFF"]
                 }
             }
@@ -994,12 +994,12 @@
             "roles": {
                 "STU": {
                     "description": "",
-                    "url": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=370000&type=d",
                     "category": ["OFF"]
                 },
                 "PAR": {
                     "description": "",
-                    "url": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=370000&type=d",
                     "category": ["OFF"]
                 }
             }
@@ -1011,12 +1011,12 @@
             "roles": {
                 "STU": {
                     "description": "",
-                    "url": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=370002&type=d",
                     "category": ["OFF"]
                 },
                 "PAR": {
                     "description": "",
-                    "url": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=370002&type=d",
                     "category": ["OFF"]
                 }
             }
