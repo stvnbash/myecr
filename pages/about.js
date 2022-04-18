@@ -10,7 +10,7 @@ export default function Home() {
         <>
             <Meta title="About" />
 
-            <div className="container">
+            <div>
                 {/* <h1 className="text-4xl m-5">About</h1>
                 <hr />
                 <div className="m-5">

@@ -93,7 +93,7 @@
         },
         {
             "id": 1,
-            "md": "#### **Welcome to the new MyECR** \n We are still working on setting up a few apps!  [Click here](https://sso.ecrchs.net) to access: Google, GoTo, Kelly, McGraw Hill, Naviance, and Paycom.  \n Encounter an issue or have feedback?  [Click here](https://docs.google.com/forms/d/e/1FAIpQLSd26tpoYyeeZR8-VbUSsHyG4YvkX1mpq5X7VerMlTTL0fEaLA/viewform?usp=sf_link) to access the feedback form.",
+            "md": "#### **Welcome to the new MyECR**  \n We are still working on setting up a few apps!  Links to access Google, GoTo, Kelly, Naviance, and Paycom will redirect you to [sso.ecrchs.net](https://sso.ecrchs.net).  \n Encounter an issue or have feedback?  [Click here](https://docs.google.com/forms/d/e/1FAIpQLSd26tpoYyeeZR8-VbUSsHyG4YvkX1mpq5X7VerMlTTL0fEaLA/viewform?usp=sf_link) to access the feedback form.",
             "start": "2022-04-05 4:50",
             "end": "2022-06-03 23:59"
         },
@@ -537,18 +537,18 @@
             }
         },
         {
-            "title": "McGraw Hill",
+            "title": "McGraw-Hill",
             "icon": "./icon/MGH_Logo_RGB.svg",
             "priority": true,
             "roles": {
                 "STU": {
                     "description": "",
-                    "url": "https://sso.ecrchs.net",
+                    "url": "https://myapps.microsoft.com/signin/d0a0104f-19ec-4df7-a0e6-af13241f71be?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
                     "category": ["INS"]
                 },
                 "TCH": {
                     "description": "",
-                    "url": "https://sso.ecrchs.net",
+                    "url": "https://myapps.microsoft.com/signin/d0a0104f-19ec-4df7-a0e6-af13241f71be?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
                     "category": ["INS"]
                 }
             }
