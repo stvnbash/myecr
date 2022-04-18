@@ -6,7 +6,7 @@ import { useSession, signIn, signOut } from "next-auth/react"
 
 
 export default function RoleSelector({ roles, showRoleSelector, setShowRoleSelector, setRole }) {
-    const { data: session } = useSession()
+    const { data: session, status } = useSession()
 
 
 
@@ -56,6 +56,7 @@ export default function RoleSelector({ roles, showRoleSelector, setShowRoleSelec
         showRoleSelector
             ? <>
                 <div className="bg-slate-800 bg-opacity-50 flex justify-center items-center absolute top-0 right-0 bottom-0 left-0">
+                    { status !== 'loading' &&
                     <div className="bg-white px-16 py-14 rounded-3xl text-center m-4 overflow-y-clip">
                         <h1 className="text-4xl mb-4 font-bold">Welcome to myECR</h1>
                         <h1 className="text-2xl mb-4 font-bold">PLEASE SELECT YOUR ROLE</h1>
@@ -79,6 +80,7 @@ export default function RoleSelector({ roles, showRoleSelector, setShowRoleSelec
                             </a>
                         </div>
                     </div>
+                    }
                 </div>
             </>
             : <></>
