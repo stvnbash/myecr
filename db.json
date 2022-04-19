@@ -470,7 +470,7 @@
             "roles": {
                 "TCH": {
                     "description": "",
-                    "url": "https://sso.ecrchs.net",
+                    "url": "https://sso.ecrchs.net/RelayService/Redirect/a8eac984-4b50-47ea-b420-874de7bba23b",
                     "category": ["ECR"]
                 }
             }
@@ -599,12 +599,12 @@
             "roles": {
                 "STU": {
                     "description": "",
-                    "url": "https://sso.ecrchs.net",
+                    "url": "https://sso.ecrchs.net/RelayService/Redirect/b01184a1-4e7d-4255-bef4-1e3136188c8b",
                     "category": ["INS"]
                 },
                 "TCH": {
                     "description": "",
-                    "url": "https://sso.ecrchs.net",
+                    "url": "https://sso.ecrchs.net/RelayService/Redirect/f1877a0b-c3a5-48c2-b5a0-02f3cb10567e",
                     "category": ["INS"]
                 }
             }
@@ -755,12 +755,12 @@
             "roles": {
                 "TCH": {
                     "description": "View your timesheets, payroll, HR information, and more",
-                    "url": "https://sso.ecrchs.net",
+                    "url": "https://sso.ecrchs.net/RelayService/Redirect/06f5dc20-99da-446c-b104-9c9f67b2f514",
                     "category": ["FEA", "ECR"]
                 },
                 "STF": {
                     "description": "View your timesheets, payroll, HR information, and more",
-                    "url": "https://sso.ecrchs.net",
+                    "url": "https://sso.ecrchs.net/RelayService/Redirect/06f5dc20-99da-446c-b104-9c9f67b2f514",
                     "category": ["FEA", "ECR"]
                 }
             }
