@@ -606,6 +606,11 @@
                     "description": "",
                     "url": "https://sso.ecrchs.net/RelayService/Redirect/f1877a0b-c3a5-48c2-b5a0-02f3cb10567e",
                     "category": ["INS"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://sso.ecrchs.net/RelayService/Redirect/f1877a0b-c3a5-48c2-b5a0-02f3cb10567e",
+                    "category": ["INS"]
                 }
             }
         },
@@ -938,6 +943,18 @@
                     "description": "View textbook statuses and fees/fines.",
                     "url": "http://textbooks.ecrchs.net",
                     "category": ["PAR"]
+                }
+            }
+        },
+        {
+            "title": "Verkada",
+            "icon": "./icon/Verkada.webp",
+            "priority": true,
+            "roles": {
+                "STF": {
+                    "description": "",
+                    "url": "https://vauth.command.verkada.com/saml/login/elco",
+                    "category": ["ECR"]
                 }
             }
         },

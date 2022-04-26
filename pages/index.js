@@ -11,7 +11,6 @@ import AuthPrompt from '../components/AuthPrompt.js';
 
 
 export default function Home({ roles, categories, cards, showRoleSelector, setShowRoleSelector, role, setRole, search, alerts }) {
-
   // const [role, setRole] = useState(null)
 
   // // https://developer.school/snippets/react/localstorage-is-not-defined-nextjs#why-does-this-happen
@@ -48,6 +47,13 @@ export default function Home({ roles, categories, cards, showRoleSelector, setSh
   //     <button onClick={() => signIn("azure-ad")}>Sign in</button>
   //   </div>
   // )
+
+  // Clear role if saved role is staff and user logs in as student
+  useEffect(() => {
+    if (status !== 'loading' && (role[2] && session) && !RegExp(role[3]).test(session.user.email)) {
+      localStorage.removeItem('role'); setRole([null, null, null, null]); setShowRoleSelector(true);
+    }
+  }, [session, status])
 
   return (
 
