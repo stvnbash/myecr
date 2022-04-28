@@ -771,6 +771,18 @@
             }
         },
         {
+            "title": "Paycom Admin",
+            "icon": "./icon/Paycom.webp",
+            "priority": true,
+            "roles": {
+                "STF": {
+                    "description": "",
+                    "url": "https://www.paycomonline.net/v4/cl/web.php/sso/index/0VF03",
+                    "category": ["ECR"]
+                }
+            }
+        },
+        {
             "title": "Peardeck",
             "icon": "./icon/Peardeck.jpg",
             "priority": true,
