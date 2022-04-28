@@ -772,7 +772,7 @@
         },
         {
             "title": "Paycom Admin",
-            "icon": "./icon/Paycom.webp",
+            "icon": "./icon/PaycomAdmin.png",
             "priority": true,
             "roles": {
                 "STF": {
