@@ -53,7 +53,7 @@ export default function Home({ roles, categories, cards, showRoleSelector, setSh
     if (status !== 'loading' && (role[2] && session) && !RegExp(role[3]).test(session.user.email)) {
       localStorage.removeItem('role'); setRole([null, null, null, null]); setShowRoleSelector(true);
     }
-  }, [session, status])
+  }, [session, status, role, setRole, setShowRoleSelector])
 
   return (
 
