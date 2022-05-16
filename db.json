@@ -374,6 +374,18 @@
             }
         },
         {
+            "title": "Gimkit",
+            "icon": "./icon/Gimkit.jpg",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "Open Gimkit, use the link on the Staff Intranet to activate your Pro Licence",
+                    "url": "https://www.gimkit.com/login",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
             "title": "GoTo Connect",
             "icon": "./icon/GoTo.webp",
             "priority": true,
@@ -468,7 +480,7 @@
             "icon": "./icon/kellyeducation_fullcolor_padding2.svg",
             "priority": true,
             "roles": {
-                "TCH": {
+                "STF": {
                     "description": "",
                     "url": "https://sso.ecrchs.net/RelayService/Redirect/a8eac984-4b50-47ea-b420-874de7bba23b",
                     "category": ["ECR"]
