@@ -284,6 +284,23 @@
             }
         },
         {
+            "title": "Cyber High",
+            "icon": "./icon/CyberHigh.png",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://world.cyberhigh.org/",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://world.cyberhigh.org/",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
             "title": "Edpuzzle",
             "icon": "./icon/Edpuzzle.webp",
             "priority": true,
