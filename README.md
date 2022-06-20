@@ -4,7 +4,7 @@
 - Key Features: apps page with categories and search, alerts, user roles, azure ad authentication
 ---
 ---
-### Libraries Used
+### Libraries used
 - framer-motion
 - nextjs-progressbar
 - react-markdown
