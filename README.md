@@ -4,6 +4,15 @@
 - Key Features: apps page with categories and search, alerts, user roles, azure ad authentication
 ---
 ---
+### Libraries used
+- framer-motion
+- nextjs-progressbar
+- react-markdown
+- Tailwind CSS
+- NextJS
+- next-auth
+---
+---
 ## Tailwind Ui
 `npm install @headlessui/react @heroicons/react`
 ---
