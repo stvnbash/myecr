@@ -7,6 +7,7 @@ import '../styles/globals.css'
 import { useState, useEffect } from 'react';
 import Head from "next/head";
 import Meta from '../components/Meta'
+import NextNProgress from "nextjs-progressbar";
 
 // For authentication
 import { SessionProvider } from "next-auth/react"
@@ -37,6 +38,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <SessionProvider session={session}>
     <div>
+      <NextNProgress color="#e2e8f0"/>
       <Meta />
       <div className='min-h-screen flex flex-col overflow-hidden'>
         {/* <Header setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole} setSearch={setSearch}/> */}
