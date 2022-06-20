@@ -409,12 +409,12 @@
             "roles": {
                 "TCH": {
                     "description": "Access your phone on the go; make and receive phone calls from anywhere",
-                    "url": "https://app.goto.com/",
+                    "url": "https://myapps.microsoft.com/signin/d7ed3a07-ef6c-4f0d-b9f4-3db767d63c2e?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
                     "category": ["ECR"]
                 },
                 "STF": {
                     "description": "Access your phone on the go; make and receive phone calls from anywhere",
-                    "url": "https://app.goto.com/",
+                    "url": "https://myapps.microsoft.com/signin/d7ed3a07-ef6c-4f0d-b9f4-3db767d63c2e?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
                     "category": ["ECR"]
                 }
             }
