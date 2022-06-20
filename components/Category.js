@@ -1,8 +1,17 @@
 import Link from 'next/link';
 import Card from '../components/Card';
+import { motion } from "framer-motion";
 
 
 export default function Category({ title, oid, cards, role, search }) {
+
+    const item = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+          y: 0,
+          opacity: 1
+        }
+      };
 
     cards.sort((a, b) => (a.title > b.title) ? 1 : -1)
     const items = []
@@ -53,7 +62,7 @@ export default function Category({ title, oid, cards, role, search }) {
 
     return (
         items.length > 0
-            ? <div className="">
+            ? <motion.div className="" initial="hidden" animate="visible" variants={item}>
                 <h2 className="mb-1 px-5 text-3xl font-semibold p-2 border-slate-400 border-b">{title}</h2>
                 {/* <hr /> */}
                 <div className="px-3 pb-5 pt-5 grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 2xl:grid-cols-8 gap-1 sm:gap-4 overflow-hidden">
@@ -70,7 +79,7 @@ export default function Category({ title, oid, cards, role, search }) {
                 <Card title="Paycom" url="" icon="https://play-lh.googleusercontent.com/JGhdoNAdO_gYOyPImRbn7CxdeY4a71ZtnhNvTZGsRyYTObPzCXXIOKpSOaQFraU6XUt-=s0-rw"/>
                 <Card title="Adobe" url="" icon="https://play-lh.googleusercontent.com/WIVfY42FSk4naFCn42h694luehyzsifuiy2l0ok_-lFeb50qda_7j3YQdp0x2-S2_ykH=s0-rw"/> */}
                 </div>
-            </div>
+            </motion.div>
             : <div></div>
     )
 

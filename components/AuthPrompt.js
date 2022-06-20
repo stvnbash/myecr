@@ -2,16 +2,25 @@ import Link from 'next/link';
 import RoleSelectorButton from './RoleSelectorButton';
 import { useState, useEffect } from 'react';
 import { useSession, signIn, signOut } from "next-auth/react"
+import { motion } from "framer-motion";
 
 
 
 export default function AuthPrompt({ role }) {
     const { data: session, status } = useSession()
 
+    const item = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+          y: 0,
+          opacity: 1
+        }
+      };
+
 
     return (
         <div className="bg-slate-800 bg-opacity-50 flex justify-center items-center absolute top-0 right-0 bottom-0 left-0">
-            <div className="bg-white px-16 py-14 rounded-3xl text-center m-4 overflow-y-clip">
+            <motion.div initial="hidden" animate="visible" variants={item} className="bg-white px-16 py-14 rounded-3xl text-center m-4 overflow-y-clip">
                 <h1 className="text-2xl mb-4 font-bold">SIGN IN TO VIEW AS {role[1].toUpperCase()}</h1>
                 <div>
                     {/* <a className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10"> */}
@@ -28,7 +37,7 @@ export default function AuthPrompt({ role }) {
                         }
                     </a>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 
