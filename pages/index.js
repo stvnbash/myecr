@@ -10,7 +10,7 @@ import { useSession, signIn, signOut } from "next-auth/react"
 import AuthPrompt from '../components/AuthPrompt.js';
 
 
-export default function Home({ roles, categories, cards, showRoleSelector, setShowRoleSelector, role, setRole, search, alerts }) {
+export default function Home({ roles, categories, cards, showRoleSelector, setShowRoleSelector, role, setRole, search, alerts, compactmode }) {
   // const [role, setRole] = useState(null)
 
   // // https://developer.school/snippets/react/localstorage-is-not-defined-nextjs#why-does-this-happen
@@ -78,7 +78,7 @@ export default function Home({ roles, categories, cards, showRoleSelector, setSh
       } */}
       {
         !role[2] || (role[2] && session)
-          ? <CategorySelector categories={categories} cards={cards} role={role} search={search} />
+          ? <CategorySelector categories={categories} cards={cards} role={role} search={search} compactmode={compactmode} />
           : status === "unauthenticated" && <AuthPrompt role={role} />
       }
       {/* <h1 className="text-3xl font-bold underline">

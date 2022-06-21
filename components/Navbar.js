@@ -1,6 +1,6 @@
 import { Fragment, useEffect } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { BellIcon, MenuIcon, XIcon, ViewGridIcon, TableIcon } from '@heroicons/react/outline'
 import Link from 'next/link';
 import { useRouter } from "next/router";
 import Search from './Search';
@@ -21,7 +21,7 @@ function classNames(...classes) {
 }
 
 
-export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }) {
+export default function Navbar({ setShowRoleSelector, role, setRole, setSearch, compactmode, setCompactmode }) {
   const router = useRouter();
   const onIndexPage = router.pathname !== "/" ? false : true;
   const { data: session, status } = useSession()
@@ -87,6 +87,14 @@ export default function Navbar({ setShowRoleSelector, role, setRole, setSearch }
                   }
               </div>
               <div className="sticky inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              {
+                role[0] && onIndexPage && ((role[2] && session) || !role[2]) &&
+                <div className='sm:flex sm:flex-col hidden'>
+                    <p className='text-white px-3 pt-2 rounded-md text-sm font-medium mx-auto'>View</p>
+                    {compactmode && <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { localStorage.setItem('compactmode', false); setCompactmode(false); }}><ViewGridIcon className="mx-auto block h-5 w-5" aria-hidden="true" /></button>}
+                    {!compactmode && <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md text-sm font-medium" onClick={() => { localStorage.setItem('compactmode', true); setCompactmode(true); }}><TableIcon className="mx-auto block h-5 w-5" aria-hidden="true" /></button>}
+                </div>
+              }
               {
                 role[0] && onIndexPage &&
                 <div className='sm:flex sm:flex-col hidden'>
