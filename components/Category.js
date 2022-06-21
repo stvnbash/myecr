@@ -1,9 +1,12 @@
 import Link from 'next/link';
-import Card from '../components/Card';
+import Card from './Card';
+import CardCompact from '../components/CardCompact'
 import { motion } from "framer-motion";
 
 
 export default function Category({ title, oid, cards, role, search }) {
+
+    const compactMode = true
 
     const item = {
         hidden: { y: 20, opacity: 0 },
@@ -22,7 +25,7 @@ export default function Category({ title, oid, cards, role, search }) {
             if (card.roles[ role[0] ].category.includes(oid)) {
                 if ( search === '' || card.title.toLowerCase().includes(search.toLowerCase()) || card.roles[ role[0] ].description.toLowerCase().includes(search.toLowerCase()) ){
                     // console.log(card.roles[ role[0] ].url)
-                    items.push(<Card
+                    !compactMode ? items.push(<Card
                         title={card.title ? card.title : "None"}
                         description={card.roles[ role[0] ].description ? card.roles[ role[0] ].description : "#"}
                         url={card.roles[ role[0] ].url ? card.roles[ role[0] ].url : "#"}
@@ -30,6 +33,14 @@ export default function Category({ title, oid, cards, role, search }) {
                         name={oid}
                         key={card.title}
                         />)
+                        : items.push(<CardCompact
+                            title={card.title ? card.title : "None"}
+                            description={card.roles[ role[0] ].description ? card.roles[ role[0] ].description : "#"}
+                            url={card.roles[ role[0] ].url ? card.roles[ role[0] ].url : "#"}
+                            icon={card.icon ? card.icon : "./icon/ECRslant.png"}
+                            name={oid}
+                            key={card.title}
+                            />)
 
                 }
 
