@@ -111,6 +111,12 @@
             "start": "2022-04-05 00:00",
             "end": "2022-04-08 16:00",
             "roles": ["STU"]
+        },
+        {
+            "id": 4,
+            "md": "#### **Welcome to the new MyECR**  \n Encounter an issue or have feedback?  [Click here](https://docs.google.com/forms/d/e/1FAIpQLSd26tpoYyeeZR8-VbUSsHyG4YvkX1mpq5X7VerMlTTL0fEaLA/viewform?usp=sf_link) to access the feedback form.",
+            "start": "2022-06-22 9:00",
+            "end": "2022-08-01 23:59"
         }
     ],
     "cards": [
@@ -499,7 +505,7 @@
             "roles": {
                 "STF": {
                     "description": "",
-                    "url": "https://sso.ecrchs.net/RelayService/Redirect/a8eac984-4b50-47ea-b420-874de7bba23b",
+                    "url": "https://login.frontlineeducation.com/sso/elcamino150",
                     "category": ["ECR"]
                 }
             }
