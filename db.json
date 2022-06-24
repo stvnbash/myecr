@@ -319,6 +319,18 @@
             }
         },
         {
+            "title": "Friends of ECR PTO",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "PAR": {
+                    "description": "",
+                    "url": "https://www.friendsofecr.com/",
+                    "category": ["OFF"]
+                }
+            }
+        },
+        {
             "title": "ERP",
             "icon": "",
             "priority": true,
@@ -635,7 +647,7 @@
                 "STU": {
                     "description": "",
                     "url": "https://myapps.microsoft.com/signin/cefc1de8-8b7d-484d-9eb7-ca8b5ddeb907?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
-                    "category": ["INS"]
+                    "category": ["INS", "FEA"]
                 },
                 "TCH": {
                     "description": "",
