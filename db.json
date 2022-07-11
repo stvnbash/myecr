@@ -307,6 +307,23 @@
             }
         },
         {
+            "title": "ECR Board",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "PAR": {
+                    "description": "View the ECR Board Agenda, Meeting Dates, Charter Documents, and more",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=370005&type=d&pREC_ID=712865",
+                    "category": ["OFF"]
+                },
+                "STU": {
+                    "description": "View the ECR Board Agenda, Meeting Dates, Charter Documents, and more",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=370005&type=d&pREC_ID=712865",
+                    "category": ["OFF"]
+                }
+            }
+        },
+        {
             "title": "Edpuzzle",
             "icon": "./icon/Edpuzzle.webp",
             "priority": true,
