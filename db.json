@@ -116,7 +116,7 @@
             "id": 4,
             "md": "#### **Welcome to the new MyECR**  \n Encounter an issue or have feedback?  [Click here](https://docs.google.com/forms/d/e/1FAIpQLSd26tpoYyeeZR8-VbUSsHyG4YvkX1mpq5X7VerMlTTL0fEaLA/viewform?usp=sf_link) to access the feedback form.",
             "start": "2022-06-22 9:00",
-            "end": "2022-08-01 23:59"
+            "end": "2022-07-29 13:59"
         }
     ],
     "cards": [
@@ -532,6 +532,11 @@
             "icon": "./icon/kellyeducation_fullcolor_padding2.svg",
             "priority": true,
             "roles": {
+                "TCH": {
+                    "description": "",
+                    "url": "https://login.frontlineeducation.com/sso/elcamino150",
+                    "category": ["ECR"]
+                },
                 "STF": {
                     "description": "",
                     "url": "https://login.frontlineeducation.com/sso/elcamino150",
