@@ -1069,6 +1069,23 @@
             }
         },
         {
+            "title": "Cafeteria",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=369938&type=d&termREC_ID=&pREC_ID=756992",
+                    "category": ["OFF"]
+                },
+                "PAR": {
+                    "description": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=369938&type=d&termREC_ID=&pREC_ID=756992",
+                    "category": ["OFF"]
+                }
+            }
+        },
+        {
             "title": "College Office",
             "icon": "",
             "priority": true,
