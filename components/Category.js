@@ -32,7 +32,7 @@ export default function Category({ title, oid, cards, role, search, compactmode 
                         title={card.title ? card.title : "None"}
                         description={card.roles[ role[0] ].description ? card.roles[ role[0] ].description : "#"}
                         url={card.roles[ role[0] ].url ? card.roles[ role[0] ].url : "#"}
-                        icon={card.icon ? card.icon : "./icon/ECRslant.png"}
+                        icon={card.icon ? card.icon : "./icon/Bear-Crest.svg"}
                         name={oid}
                         key={card.title}
                         />)
