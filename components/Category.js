@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 
 export default function Category({ title, oid, cards, role, search, compactmode }) {
+    // The defaultIcon will be used whenever an icon is not specified in the db.json file
+    const defaultIcon = "./icon/Bear-Crest.svg"
 
+    // For framer motion
     const item = {
         hidden: { y: 20, opacity: 0 },
         visible: {
@@ -19,10 +22,13 @@ export default function Category({ title, oid, cards, role, search, compactmode 
         }
       };
 
+    // Sorting cards to be in alphabetical order by title
     cards.sort((a, b) => (a.title > b.title) ? 1 : -1)
     const items = []
     //  && (Object.keys(card.roles).includes(role[0]))
     // if (card.category.includes(oid) && (Object.keys(card.roles).includes(role[0]))) {
+    
+    // Displaying cards if card is assigned to role and category
     for (let card of cards) {
         if (Object.keys(card.roles).includes(role[0])) {
             if (card.roles[ role[0] ].category.includes(oid)) {
@@ -32,7 +38,7 @@ export default function Category({ title, oid, cards, role, search, compactmode 
                         title={card.title ? card.title : "None"}
                         description={card.roles[ role[0] ].description ? card.roles[ role[0] ].description : "#"}
                         url={card.roles[ role[0] ].url ? card.roles[ role[0] ].url : "#"}
-                        icon={card.icon ? card.icon : "./icon/Bear-Crest.svg"}
+                        icon={card.icon ? card.icon : defaultIcon}
                         name={oid}
                         key={card.title}
                         />)
@@ -40,7 +46,7 @@ export default function Category({ title, oid, cards, role, search, compactmode 
                             title={card.title ? card.title : "None"}
                             description={card.roles[ role[0] ].description ? card.roles[ role[0] ].description : "#"}
                             url={card.roles[ role[0] ].url ? card.roles[ role[0] ].url : "#"}
-                            icon={card.icon ? card.icon : "./icon/ECRslant.png"}
+                            icon={card.icon ? card.icon : defaultIcon}
                             name={oid}
                             key={card.title}
                             />)
