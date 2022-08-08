@@ -687,6 +687,28 @@
             }
         },
         {
+            "title": "Microsoft Stream",
+            "icon": "./icon/MSstream.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://web.microsoftstream.com/",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://web.microsoftstream.com/",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://web.microsoftstream.com/",
+                    "category": ["PRO"]
+                }
+            }
+        },
+        {
             "title": "My MealTime",
             "icon": "./icon/MyMealTime.webp",
             "priority": true,
