@@ -515,12 +515,12 @@
             "roles": {
                 "STU": {
                     "description": "",
-                    "url": "https://hmhco.com/api/external-sso/access?sp=ed&connection=CA-ECRCH-00078253",
+                    "url": "https://papi.hmhco.com/login/initialize?iss=hmh-prod-4d233074-69ab-43c9-9e07-6e0f2aacf21b&idp=0oa1wvwmhtgcVdTsG697",
                     "category": ["INS"]
                 },
                 "TCH": {
                     "description": "",
-                    "url": "https://hmhco.com/api/external-sso/access?sp=ed&connection=CA-ECRCH-00078253",
+                    "url": "https://papi.hmhco.com/login/initialize?iss=hmh-prod-4d233074-69ab-43c9-9e07-6e0f2aacf21b&idp=0oa1wvwmhtgcVdTsG697",
                     "category": ["INS"]
                 }
             }
