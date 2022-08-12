@@ -41,7 +41,8 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <SessionProvider session={session}>
       <div>
-        <NextNProgress color="#e2e8f0" />
+        {/* <NextNProgress color="#e2e8f0" /> */}
+        <NextNProgress color="#FFD028" />
         <Meta />
         <div className='min-h-screen flex flex-col overflow-hidden'>
           {/* <Header setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole} setSearch={setSearch}/> */}
@@ -49,6 +50,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
           <Navbar setShowRoleSelector={setShowRoleSelector} role={role} setRole={setRole} setSearch={setSearch} compactmode={compactmode} setCompactmode={setCompactmode} />
 
           <main className="pt-2 md:pt-4 sm:px-10 bg-slate-200 overflow-y-auto  flex flex-grow flex-col justify-between z-10 h-0">
+          {/* <main className="pt-2 md:pt-4 sm:px-10 bg-slate-200 overflow-y-auto  flex flex-grow flex-col justify-between z-10 h-0 text-ecrBlack"> */}
             {/* Decided to implement Announcements for Index only
             <Announcement Announcement_Title={"Welcome to the new MyECR"} Announcement_Body={"We are still working on migrating the following apps: Google, GoTo, Kelly, McGraw Hill, Naviance, Netsuite, Paycom"} /> */}
             <Component {...pageProps} showRoleSelector={showRoleSelector} setShowRoleSelector={setShowRoleSelector}
@@ -64,4 +66,3 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
 }
 
 export default MyApp
-

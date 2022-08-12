@@ -48,6 +48,14 @@ export default function Home({ roles, categories, cards, showRoleSelector, setSh
   //   </div>
   // )
 
+  /* Note about Role
+  setRole([oid, title, signin, emailRegex]);
+  role[0] = oid = "STU", "TCH", etc...
+  role[1] = title = "Student", "Teacher", etc...
+  role[2] = signin = true, false
+  role[3] = emailRegex = string for email pattern for authentication
+  */
+
   // Clear role if saved role is staff and user logs in as student
   useEffect(() => {
     if (status !== 'loading' && (role[2] && session) && !RegExp(role[3]).test(session.user.email)) {

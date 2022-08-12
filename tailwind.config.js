@@ -4,7 +4,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        ecrDarkBlue: "#18467D",
+        ecrLightBlue: "#5894CF",
+        ecrCamel: "#FFD028",
+        ecrBlack: "#121617",
+        ecrWhite: "#FFFFFF"
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
