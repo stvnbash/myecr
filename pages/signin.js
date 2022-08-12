@@ -22,7 +22,7 @@ export default function Home() {
             <div className="m-auto text-ecrDarkBlue">
                 <p className='text-4xl mb-4 font-bold text-center'>MyECR is loading</p>
                 <p className='text-base font-semibold'>Is this page frozen?</p>
-                <p className='text-base font-semibold'>Click "Home" at the top to proceed.</p>
+                <p className='text-base font-semibold'>Click <span className='font-bold'>&quot;Home&quot;</span> at the top to proceed.</p>
             </div>
         </>
     )
