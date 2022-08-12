@@ -28,7 +28,8 @@ export default function AuthPrompt({ role }) {
                         {
                             !session && <div className='border-0 border-t-2 border-black py-4'>
                                 <button
-                                    className="px-4 py-2 font-semibold text-md bg-blue-800 text-white rounded-full shadow-sm hover:shadow-lg hover:font-bold hover:underline hover:underline-offset-2 w-60"
+                                    // className="px-4 py-2 font-semibold text-md bg-blue-800 text-white rounded-full shadow-sm hover:shadow-lg hover:font-bold hover:underline hover:underline-offset-2 w-60"
+                                    className="px-4 py-2 font-semibold text-md bg-ecrDarkBlue text-white rounded-full shadow-sm hover:shadow-lg hover:font-bold hover:underline hover:underline-offset-2 w-60"
                                     onClick={() => { signIn("azure-ad"); }
                                     }>
                                     Sign in to myECR
