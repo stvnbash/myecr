@@ -1128,6 +1128,23 @@
             }
         },
         {
+            "title": "Attendance Office",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=369931&type=d",
+                    "category": ["OFF"]
+                },
+                "PAR": {
+                    "description": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=369931&type=d",
+                    "category": ["OFF"]
+                }
+            }
+        },
+        {
             "title": "Cafeteria",
             "icon": "",
             "priority": true,
