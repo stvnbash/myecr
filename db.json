@@ -122,6 +122,22 @@
             "md": "#### **Welcome to the new MyECR**  \n Encounter an issue or have feedback?  [Click here](https://docs.google.com/forms/d/e/1FAIpQLSd26tpoYyeeZR8-VbUSsHyG4YvkX1mpq5X7VerMlTTL0fEaLA/viewform?usp=sf_link) to access the feedback form.",
             "start": "2022-06-22 9:00",
             "end": "2022-07-29 13:59"
+        },
+        {
+            "id": 5,
+            "title": "Spirit Week (8/22/2022 - 8/26/2022)",
+            "body": "M: Minion Monday | T: Country vs. Country Club | W: Surfer vs. Skater | Th: Red Flag Thursday | F: Class Colors",
+            "start": "2022-08-22 0:00",
+            "end": "2022-08-26 23:59"
+        },
+        {
+            "id": 6,
+            "title": "PSAT Sign Up",
+            "body": "The PSAT is a preparatory version of the SAT exam.  You may receive a National Merit Scholarship if you earn a high score on the PSAT during your Junior year.  The PSAT will be held at ECRCHS on Saturday, October 15, 2022 from 8am - 1pm.  Sign ups close on September 9.",
+            "md": "[Click here](https://docs.google.com/forms/d/e/1FAIpQLSdTcfnpnfhrkBWfoIQ9XeDoaCKHTNEskP6AGkYQgu5BOEmTkg/viewform?usp=pp_url) to sign up.  [Click here](https://satsuite.collegeboard.org/psat-nmsqt) for more information.",
+            "start": "2022-08-29 0:00",
+            "end": "2022-09-09 23:59",
+            "roles": ["STU", "PAR"]
         }
     ],
     "cards": [
