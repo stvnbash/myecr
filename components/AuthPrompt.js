@@ -32,7 +32,7 @@ export default function AuthPrompt({ role }) {
                                     className="px-4 py-2 font-semibold text-md bg-ecrDarkBlue text-white rounded-full shadow-sm hover:shadow-lg hover:font-bold hover:underline hover:underline-offset-2 w-60"
                                     onClick={() => { signIn("azure-ad"); }
                                     }>
-                                    Sign in to myECR
+                                    Sign in to MyECR
                                 </button>
                             </div>
                         }

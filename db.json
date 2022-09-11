@@ -622,17 +622,17 @@
                 "STU": {
                     "description": "",
                     "url": "https://tawk.to/ecrchs",
-                    "category": ["FEA","ECR"]
+                    "category": []
                 },
                 "TCH": {
                     "description": "",
                     "url": "https://tawk.to/ecrchs",
-                    "category": ["FEA","ECR"]
+                    "category": []
                 },
                 "STF": {
                     "description": "",
                     "url": "https://tawk.to/ecrchs",
-                    "category": ["FEA","ECR"]
+                    "category": []
                 }
             }
         },
@@ -1099,6 +1099,23 @@
                     "description": "View textbook statuses and fees/fines.",
                     "url": "http://textbooks.ecrchs.net",
                     "category": ["PAR"]
+                }
+            }
+        },
+        {
+            "title": "Vector Solutions - TeachPoint",
+            "icon": "./icon/TP-with-VS.webp",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "TeachPoint Evaluation",
+                    "url": "https://tp1.goteachpoint.com/sso/login?district=ecrchs",
+                    "category": ["ECR"]
+                },
+                "STF": {
+                    "description": "TeachPoint Evaluation",
+                    "url": "https://tp1.goteachpoint.com/sso/login?district=ecrchs",
+                    "category": ["ECR"]
                 }
             }
         },
