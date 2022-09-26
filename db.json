@@ -585,11 +585,6 @@
             "icon": "./icon/kellyeducation_fullcolor_padding2.svg",
             "priority": true,
             "roles": {
-                "TCH": {
-                    "description": "",
-                    "url": "https://login.frontlineeducation.com/sso/elcamino150",
-                    "category": ["ECR"]
-                },
                 "STF": {
                     "description": "",
                     "url": "https://login.frontlineeducation.com/sso/elcamino150",
